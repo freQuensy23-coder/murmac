@@ -120,7 +120,7 @@ final class MurmacAppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate
         }
         let window = NSWindow(
             contentRect: NSRect(x: 0, y: 0, width: 1020, height: 680),
-            styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
+            styleMask: [.titled, .closable, .miniaturizable, .resizable],
             backing: .buffered,
             defer: false
         )

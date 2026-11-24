@@ -56,6 +56,7 @@ public final class AppState: ObservableObject {
 
     private let recordingFlag = RecordingFlag()
     private var currentSearchQuery: String = ""
+    private var cancellables: Set<AnyCancellable> = []
 
     public init() {
         MurmacFonts.registerIfNeeded()
@@ -148,15 +149,70 @@ public final class AppState: ObservableObject {
         )
 
         refreshInstallStates()
+        autoSelectInstalledModelsIfUnset()
         reloadHistory()
         reloadBenchmarks()
         reloadCustomModels()
         applyRetentionIfNeeded()
-        startHotkeyIfPossible()
+
+        // Only create the global CGEventTap once Accessibility is granted;
+        // otherwise macOS pops an unrelated "Input Monitoring" dialog during onboarding.
+        if permissionSnapshot.accessibility {
+            startHotkeyIfPossible()
+        }
+
+        // Automatically refresh permission status whenever the user returns from System Settings.
+        NotificationCenter.default.publisher(for: NSApplication.didBecomeActiveNotification)
+            .receive(on: RunLoop.main)
+            .sink { [weak self] _ in
+                self?.refreshPermissions()
+            }
+            .store(in: &cancellables)
 
         Task {
             await probeEngines()
         }
+    }
+
+    private func autoSelectInstalledModelsIfUnset() {
+        var changed = false
+        var updated = settings
+        let selectedAsrInstalled: Bool = {
+            guard let m = catalog.models.first(where: { $0.id == updated.selectedAsrModelId }),
+                  let art = m.preferredArtifact else { return false }
+            return storage.isInstalled(art)
+        }()
+        if !selectedAsrInstalled {
+            if let asr = catalog.models.first(where: { $0.kind == .asr && ($0.preferredArtifact.map { storage.isInstalled($0) } ?? false) }) {
+                updated.selectedAsrModelId = asr.id
+                changed = true
+            }
+        }
+        let selectedLlmInstalled: Bool = {
+            guard let lid = updated.selectedLlmModelId,
+                  let m = catalog.models.first(where: { $0.id == lid }),
+                  let art = m.preferredArtifact else { return false }
+            return storage.isInstalled(art)
+        }()
+        if !selectedLlmInstalled && updated.cleanupEnabled {
+            if let llm = catalog.models.first(where: { $0.kind == .llm && ($0.preferredArtifact.map { storage.isInstalled($0) } ?? false) }) {
+                updated.selectedLlmModelId = llm.id
+                changed = true
+            }
+        }
+        if changed {
+            settingsStore.save(updated)
+            settings = updated
+        }
+    }
+
+    public func relaunchApp() {
+        let bundleURL = Bundle.main.bundleURL
+        let proc = Process()
+        proc.executableURL = URL(fileURLWithPath: "/usr/bin/open")
+        proc.arguments = ["-n", bundleURL.path]
+        try? proc.run()
+        NSApp.terminate(nil)
     }
 
     public func probeEngines() async {
@@ -172,6 +228,10 @@ public final class AppState: ObservableObject {
     }
 
     public func startHotkeyIfPossible() {
+        guard permissions.check().accessibility else {
+            hotkeyActive = false
+            return
+        }
         hotkeyActive = hotkeyMonitor.start()
     }
 

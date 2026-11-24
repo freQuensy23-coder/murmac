@@ -385,6 +385,8 @@ public struct SettingsView: View {
                 .font(MurmacFonts.sans(22, weight: .semibold))
                 .foregroundColor(MurmacColor.ink)
             Spacer()
+            Button(l10n.t("Restart Murmac", "Перезапустить")) { state.relaunchApp() }
+                .buttonStyle(.bordered)
             Button(l10n.t("Refresh", "Обновить")) { state.refreshPermissions() }
                 .buttonStyle(.bordered)
         }

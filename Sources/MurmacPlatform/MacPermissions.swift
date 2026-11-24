@@ -22,11 +22,13 @@ public final class MacPermissions: PermissionMonitorPort, @unchecked Sendable {
     }
 
     public func requestAccessibilityPrompt() {
+        guard !AXIsProcessTrusted() else { return }
         let opts = ["AXTrustedCheckOptionPrompt": true] as CFDictionary
         _ = AXIsProcessTrustedWithOptions(opts)
     }
 
     public func requestScreenRecordingPrompt() {
+        guard !CGPreflightScreenCaptureAccess() else { return }
         _ = CGRequestScreenCaptureAccess()
     }
 

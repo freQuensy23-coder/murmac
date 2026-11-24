@@ -1,0 +1,1 @@
+{"name": "default.v6", "system": "default.v6", "shots": null, "_comment": "default.v1 with the ctx v2 wording: rule 9 = default.v4's OCR paragraph (+ tone), the inline example's context described as OCR screen text. Nothing else changed (PROMPT_EVAL.md R2). Measured, not shipped: LFM3 answered one more dictated question raw on test.v2."}

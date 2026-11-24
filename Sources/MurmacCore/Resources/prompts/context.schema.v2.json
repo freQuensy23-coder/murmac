@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "murmur/context.schema.v2.json",
+  "title": "Murmur ContextPacket v2 (context = what OCR sees)",
+  "description": "Binding definition: docs/ml/CONTEXT_V2.md. Screen text comes only from OCR of the screenshot; app and field from accessibility. prompts/render.py render_context_v2 turns this into the <context> block (budget/order/drop rules applied there, not by the OCR pipeline). Supersedes context.schema.v1.json.",
+  "type": "object",
+  "required": [
+    "v",
+    "app"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "v": {
+      "const": 2
+    },
+    "app": {
+      "type": "object",
+      "required": [
+        "package"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "package": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "label": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "category": {
+          "type": "string",
+          "maxLength": 40,
+          "description": "messaging | work_chat | email | notes | code | search | address | social | default (prompts/tones/tones.v1.json; unknown -> default)"
+        }
+      }
+    },
+    "field": {
+      "description": "Absent when the app exposes no focused editable node.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "type": "string",
+          "maxLength": 40,
+          "description": "message | email_body | email_subject | search | address | note | code | generic (unknown -> 'text field')"
+        },
+        "hint": {
+          "type": "string",
+          "maxLength": 200,
+          "description": "Node hint text (placeholder)."
+        },
+        "before_cursor": {
+          "type": "string",
+          "maxLength": 4000,
+          "description": "Field text before the cursor (renderer keeps the last 300 chars)."
+        },
+        "box": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 4,
+          "maxItems": 4,
+          "description": "Optional. [x0,y0,x1,y1] of the focused node in screenshot pixels (AccessibilityNodeInfo.getBoundsInScreen). Anchors the 'nearest to the field' order and removes OCR lines inside the field. Without it the anchor is the screen bottom."
+        },
+        "input_type_variation": {
+          "type": "string",
+          "maxLength": 40
+        },
+        "password": {
+          "type": "boolean",
+          "description": "Focused node is a password field. The app takes no screenshot then (screen absent) and should not call the LLM at all."
+        }
+      }
+    },
+    "screen": {
+      "description": "OCR pipeline output (ml/ocr): filtered, repaired, de-duplicated, reading order. Absent when there is no screenshot (secure window, password field, denylisted app, error, nothing found).",
+      "type": "object",
+      "required": [
+        "size",
+        "lines"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "size": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "lines": {
+          "type": "array",
+          "maxItems": 400,
+          "items": {
+            "type": "object",
+            "required": [
+              "text",
+              "box"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "text": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "conf": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "box": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                },
+                "minItems": 4,
+                "maxItems": 4
+              }
+            }
+          }
+        }
+      }
+    },
+    "language": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "asr": {
+          "type": "string",
+          "maxLength": 8
+        }
+      }
+    },
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "level": {
+          "type": "string",
+          "maxLength": 20,
+          "description": "full | app_only | none. full: app, field kind/hint, text before the cursor and screen text (if any). app_only: app, field kind and hint only (no screen text, no text before the cursor). none: as app_only and the app label is hidden. Unknown values (also the deprecated 'no_screenshot') render as full. Without a screen the phone MUST send the level that prompts/render.py NO_SCREEN_LEVEL gives for the reason (ADR-070): secure_window, denylisted_app -> app_only; password_field -> none (the LLM is never run, so such a ctx is never rendered and appears in no eval or training example); screenshot_error, ocr_empty -> full; user_setting -> app_only."
+        },
+        "reason": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 60,
+          "description": "null when a screen is present. Otherwise why it is absent: secure_window | denylisted_app | password_field | screenshot_error | ocr_empty | user_setting.",
+          "enum": [
+            null,
+            "secure_window",
+            "denylisted_app",
+            "password_field",
+            "screenshot_error",
+            "ocr_empty",
+            "user_setting"
+          ]
+        }
+      }
+    }
+  }
+}

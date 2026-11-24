@@ -1,0 +1,29 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Message»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Sabrina Kane 14:22 PagerDuty rotation updated
+Siobhan Keane 13:05 Heads up, Datadog paged twice overnight INC-2291
+SK
+Today
+Ethan Moore
+Друзья
+Liam Johnson
+●Семья
+Direct messages
+# hiring
+# design
+# support
+# office
+# standup
+38 members
+Studio
+# oncall
+</context>
+<transcript>
+can you ping shivon keen about the data dog alert from last night
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

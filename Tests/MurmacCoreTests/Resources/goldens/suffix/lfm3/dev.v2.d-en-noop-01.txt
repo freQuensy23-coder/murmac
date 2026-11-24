@@ -1,0 +1,11 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Message»
+Dictation language: English
+</context>
+<transcript>
+Got it, thanks. I'll take a look tonight.
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

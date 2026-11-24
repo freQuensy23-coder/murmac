@@ -1,0 +1,15 @@
+Style: Notes or a document. Use paragraphs, and lists or headings only when the speaker clearly structured the content that way.
+<context>
+App: Obsidian — note
+Field hint: «Заметка»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Platform sync 2026-11-17
+Jenkins, GitHub Actions, platform-alerts
+Изменено 12:23
+</context>
+<transcript>
+так заметки по созвону с командой платформы. значит мы решили что переходим с jenkins на github actions до конца квартала. ответственный за миграцию паша, ему помогает лена. основной риск это self-hosted runners, у нас их сейчас двенадцать и половина из них на старой убунте. мы договорились что сначала обновим их до двадцать четвертой версии а уже потом начнем переносить пайплайны по одному начиная с самых простых. эээ дальше. по мониторингу мы остаемся на prometheus плюс grafana но алерты переносим из почты в slack канал platform-alerts. и ещё one more thing, Mike asked us to write a short postmortem about last week's outage, the one with the expired certificate, он хочет его до пятницы. я сказал что напишу черновик к среде, а лена проверит. кстати, Лена предложила вести changelog миграции прямо в этом документе, so everyone can see the progress. в общем всё. следующий созвон через две недели в то же время.
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

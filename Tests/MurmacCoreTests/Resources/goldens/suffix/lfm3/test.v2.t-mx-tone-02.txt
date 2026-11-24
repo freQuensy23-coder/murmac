@@ -1,0 +1,27 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+main, PR #482, murmur-android
+2января
+Женя
+Family
+Светлана Морозова
+•Ирина Ковалёва
+Личные сообщения
+# standup
+# general
+# hiring
+# office
+# announcements
+# design
+Костя 83 участников
+Team
+</context>
+<transcript>
+можешь смержить мой пиар в мейн я всё поправил по комментам
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

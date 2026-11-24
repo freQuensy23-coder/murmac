@@ -1,0 +1,34 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Message»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+See you then
+on Sunday apparently Got it
+Did you see the forecast for the weekend? Rain on Saturday, sunny
+Sure, I'll stop by the store after work
+Morning! How did you sleep? 7 replies Fine, but we're out of coffee Can you grab some milk on the way?
+#sales 11:37 Stuck in traffic, running about fifteen late No worries, we're late too Has anyone seen my umbrella? It's hanging by the door Happy birthday! Have a great one! Thank you so much! Did the package arrive? Yes, it's at the post…
+Neighbours
+Football
+Can you send the address again?
+James Carter
+holidays I'll call her back tonight 4 replies I left the keys with the neighbor Don't forget the charger this time
+Liam Johnson
+hessages
+#sales 09:14 Then let's do the hike on Sunday Mom called asking about the
+# design
+# standup
+Dec 9
+# random
+# support
+# general # office
+68 members
+Отдел
+# sales
+</context>
+<transcript>
+the meeting went well но клиент хочет скидку ещё десять процентов
+</transcript><|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,29 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Message»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Lucas White
+Today
+Weekend hikes
+Book club
+Direct messages Football
+# announcements
+# support
+# random
+# standup
+# general
+# office
+19 members
+Studio
+# leads
+</context>
+<transcript>
+the meeting moved to two thirty p m on the fourteenth
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

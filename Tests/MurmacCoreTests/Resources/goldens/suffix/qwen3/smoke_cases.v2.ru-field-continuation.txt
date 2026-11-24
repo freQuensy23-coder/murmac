@@ -1,0 +1,23 @@
+Style: Email. Use complete sentences and paragraphs; put a greeting and a sign-off on their own lines only if they were dictated.
+<context>
+App: Gmail — email body
+Field hint: «Текст письма»
+Dictation language: Russian
+Text already in the field before the cursor: «Здравствуйте, Ирина Владимировна! Спасибо за быстрый ответ.»
+Screen text (OCR, nearest to the field first):
+Tema
+Кому
+CК
+Сергей Кузнецов
+hello@outlook.com
+ОT
+Написать
+</context>
+<transcript>
+договор подпишем в понедельник а оригиналы отправим курьером
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

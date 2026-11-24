@@ -1,0 +1,15 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Message»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Evgeny Sokolov, Evgenia Sokolova, FY27 budget
+Sep 21
+69 members
+# finance
+</context>
+<transcript>
+can you ask yevgeny sokolof to approve the budget
+</transcript><|im_end|>
+<|im_start|>assistant

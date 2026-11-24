@@ -1,0 +1,16 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+#backend, GitHub
+Сегодня
+Посмотри, когда будет время
+Бабушка
+Сообщения · сейчас
+</context>
+<transcript>
+я запушил фикс в гитхаб и открыл пул реквест глянь когда будет время
+</transcript><|im_end|>
+<|im_start|>assistant

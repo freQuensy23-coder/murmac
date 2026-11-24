@@ -1,0 +1,21 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Grafana, Loki, Tempo, Mimir
+Метки
+Средний
+Пгиоритет
+Исполнитель
+Бег по субботам
+Статус
+В работе
+#observability
+←DATA-2568
+</context>
+<transcript>
+логи смотри в графане через локи
+</transcript><|im_end|>
+<|im_start|>assistant

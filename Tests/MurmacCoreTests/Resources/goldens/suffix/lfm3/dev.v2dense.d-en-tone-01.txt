@@ -1,0 +1,12 @@
+Style: Technical input. Keep identifiers, commands, paths and flags exactly as on screen; do not capitalize or add punctuation to commands; wrap nothing in quotes unless dictated.
+<context>
+App: Termux — code or terminal input
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+/infra
+</context>
+<transcript>
+docker ps dash a pipe grep postgres
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

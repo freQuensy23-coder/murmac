@@ -1,0 +1,19 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Message»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Priority
+Low
+Assignee
+Neighbours
+In progress
+Status
+#python
+←DATA-2658
+</context>
+<transcript>
+the docs are at docs dot python dot org slash three slash library
+</transcript><|im_end|>
+<|im_start|>assistant

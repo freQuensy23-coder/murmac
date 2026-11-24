@@ -1,0 +1,41 @@
+Style: Email. Use complete sentences and paragraphs; put a greeting and a sign-off on their own lines only if they were dictated.
+<context>
+App: Gmail — email body
+Field hint: «Текст письма»
+Dictation language: Russian
+Text already in the field before the cursor: «Коллеги, напоминаю, что отчёт нужно сдать до»
+Screen text (OCR, nearest to the field first):
+Несортированные
+Corner Store
+Напоминание о записи Добрый день, во вложении…
+Школа №57
+Счёт за ноябрь Здравствуйте! Напоминаем, что…
+ЖКХ Сервис
+Квитанция об оплате
+Уважаемый клиент, сообщаем…
+BT
+Наталья Павловна
+Приглашение на встречу
+Thanks for your purchase. Your order..
+сб
+Светлана Морозова
+CM
+Подтверждение бронирования Hi there, just a reminder that...
+City Library Новости недели
+Привет! Как и договаривались…
+отчёт.docx
+Катя
+Изменения в расписании Спасибо за покупку. Ваш заказ.…
+Папа
+Appointment reminder Hey! As we discussed...
+Почта
+Видеовстречи
+</context>
+<transcript>
+пятницы двадцать девятого ноября включительно
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

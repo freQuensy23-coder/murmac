@@ -1,0 +1,13 @@
+Style: Notes or a document. Use paragraphs, and lists or headings only when the speaker clearly structured the content that way.
+<context>
+App: Obsidian — note
+Field hint: «Заметка»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Week 47
+Изменено 15:06
+</context>
+<transcript>
+todo на неделю один написать unit тесты два обновить readme три созвон с дизайнером
+</transcript><|im_end|>
+<|im_start|>assistant

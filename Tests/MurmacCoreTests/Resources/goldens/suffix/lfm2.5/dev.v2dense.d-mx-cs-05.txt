@@ -1,0 +1,52 @@
+Style: Casual chat message. Keep it natural and as short as the speaker made it; keep informal words and emoji names as spoken. A single short sentence may end without a period.
+<context>
+App: WhatsApp — message field
+Field hint: «Message»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+sec?
+Can you check this when you have a
+seen my umbrella?
+No worries, we're late too Has anyone
+Thanks so much!
+traffic, running about fifte
+Jan 25
+Family
+Don't forget the charger this time Can you send the address again? Stuck in
+OK
+ND
+Noah Davis
+Oct 22
+Mom called asking about the holidays I'll call her back tonight I left the keys with the neighbor
+Can you pick up milk?
+WH
+Sun
+Weekend hikes
+on Sunday
+Haha
+Did you see the forecast for the weekend? Rain on Saturday, sunny on Sunday apparently Then let's do the hike
+Tue
+Папа
+Don't forget the umbrella
+Wed
+Football
+Fine, but we're out of coffee Can you grab some milk on the way? Sure, I'll stop by the store after work
+Can you check this when y..
+Lisa
+you sleep?
+Call you later
+post office until Friday Morning! How did
+Mom
+Did the package arrive? Yes, it's at the
+Happy birthday!
+LW
+Have a great one! Thank you so much!
+Lucas White
+it's nanging by tne door Happy birtnday!
+typing...
+Chats
+</context>
+<transcript>
+i'll be there in five minutes только паркуюсь
+</transcript><|im_end|>
+<|im_start|>assistant

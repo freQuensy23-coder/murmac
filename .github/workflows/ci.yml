@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-test-bundle:
+    runs-on: macos-15
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check toolchain
+        run: |
+          sw_vers
+          uname -m
+          swift --version
+          cmake --version
+
+      - name: Run Swift build and unit/golden tests (without prebuilt natives)
+        run: |
+          swift build
+          swift test --disable-xctest
+
+      - name: Build native Metal LLM and fetch sherpa-onnx v2.0.1
+        run: |
+          ./native/build_native.sh all
+
+      - name: Run full test suite with native Metal LLM & sherpa-onnx libraries
+        env:
+          MURMAC_NATIVE_LIBS_DIR: ${{ github.workspace }}/.cache/native/macos-arm64
+        run: |
+          swift test --disable-xctest
+
+      - name: Build and verify release Murmac.app bundle
+        run: |
+          ./Scripts/bundle_app.sh release
+          codesign --verify --deep --strict --verbose=2 dist/Murmac.app
+          test -f dist/Murmac.app/Contents/MacOS/Murmac
+          test -f dist/Murmac.app/Contents/Frameworks/libmurmur_llm.dylib
+          test -f dist/Murmac.app/Contents/Frameworks/libggml-metal.so
+          test -f dist/Murmac.app/Contents/Frameworks/libsherpa-onnx-c-api.dylib
+          test -f dist/Murmac.app/Contents/Frameworks/libonnxruntime.dylib
+          # Verify standalone bundle works with no .build directory present
+          mv .build .build.hidden
+          rc=0
+          dist/Murmac.app/Contents/MacOS/Murmac --self-check --require-native || rc=$?
+          mv .build.hidden .build
+          exit $rc

@@ -1,0 +1,39 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Message»
+Dictation language: English
+Text already in the field before the cursor: «Thanks for the review!»
+Screen text (OCR, nearest to the field first):
+Chris Fvan
+Chris Evans 14:22 I left the keys with the neighbor Don't forget the charger this time Can you send the address again?
+Chris Evans 13:05 Then let's do the hike on Sunday Mom called asking about the holidays I'll call her back tonight
+CE
+Saturday, sunny on Sunday apparently
+Chris Evans 12:41 Sure, I'll stop by the store after work Did you see the forecast for the weekend? Rain on
+Morning! How did you sleep? Fine, but we're out of coffee Can you grab some milk on the way?
+Chris Evans 11:37
+Friday
+Happy birthday! Have a great one! Did the package arrive? Yes, it's at the post office until
+Chris Evans 10:02
+Comments
+Description No worries, we're late too Has anyone seen my umbrella? It's hanging by the door
+High
+Priority
+СЕ
+Assignee
+Chris Evans
+Done
+Status
+Great
+Mom
+Сообщения· now
+</context>
+<transcript>
+поправлю завтра утром
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

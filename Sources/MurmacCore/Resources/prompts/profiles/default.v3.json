@@ -1,0 +1,2 @@
+{"name": "default.v3", "system": "default.v3", "shots": "shots/default.v3.jsonl",
+ "_comment": "v3 rules (fillers also in punctuated input, spoken punctuation words disappear, 'Dictation language' is only a hint) + 13 compact few-shot chat turns aimed at the v1/v2 dev failure classes, ending with an empty-output demo."}

@@ -1,0 +1,10 @@
+Style: Technical input. Keep identifiers, commands, paths and flags exactly as on screen; do not capitalize or add punctuation to commands; wrap nothing in quotes unless dictated.
+<context>
+App: Termux — code or terminal input
+Dictation language: Russian
+</context>
+<transcript>
+эл эс минус эл эй
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

@@ -1,0 +1,29 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Teams — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Weekly 18:50 Спасибо! 7 ответа
+Weekly 14:22 Не забудь зарядку, в прошлый раз забыли Скинь, пожалуйста, адрес ещё раз Я в пробке, опаздываю минут на пять Ничего страшного, мы тоже задерживаемся
+Бабушка
+•Анна Смирнова
+• Бег по субботам
+sosedki
+•Вера Николаевна
+Мама звонила, спрашивала про праздники Я ей вечером перезвоню Ключи оставлю у
+Личные сообщения
+воскресенье
+# support
+обещают? Вроде дождь в субботу, а в воскресенье солнце Тогда на дачу едем в
+# general
+# announcements
+Доброе утро! Как спалось? Нормально, только кофе закончился Купи по дороге молоко, пожалуйста Ты видел, какая погода на выходных
+# hiring # design
+Сообщения·сейчас Дмитрий Орлов Скинь адрес
+</context>
+<transcript>
+давай обсудим это offline after the call
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

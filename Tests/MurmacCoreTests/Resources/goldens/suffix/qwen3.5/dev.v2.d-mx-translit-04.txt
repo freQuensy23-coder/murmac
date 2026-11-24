@@ -1,0 +1,18 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Сегодня
+42 участников
+Аня Ким
+</context>
+<transcript>
+скинь мне в телеграм ссылку на ноушен
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

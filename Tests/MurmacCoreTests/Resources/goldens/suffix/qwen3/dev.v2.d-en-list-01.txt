@@ -1,0 +1,40 @@
+Style: Social media post or comment. Keep the speaker's voice and informal style; do not add hashtags or emoji that were not dictated.
+<context>
+App: X — text field
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Photos from the weekend
+Jun 18
+Send me the address
+Mar 1
+Вера Николаевна
+Can you pick up milk?
+Женя
+Nov 17
+Thanks so much!
+Sun
+Football
+Tomorrow at seven
+BC
+Fri
+Book club
+All done
+Ava Lewis
+Mon
+Don't forget the umbrella
+Папа
+Фото с выходных
+Neighbours
+Where are we meeting?
+Родительский чат 55
+Родительский чат 5Б online
+Chats
+</context>
+<transcript>
+my top three movies are inception the matrix and interstellar
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

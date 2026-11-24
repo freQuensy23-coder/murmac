@@ -1,0 +1,15 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Message»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Figma, FigJam, Miro, Storybook, Chromatic
+Feb 16
+36 members
+# design-system
+</context>
+<transcript>
+i updated the components in fig ma and pushed them to story book
+</transcript><|im_end|>
+<|im_start|>assistant

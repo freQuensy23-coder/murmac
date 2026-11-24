@@ -1,0 +1,15 @@
+Style: Technical input. Keep identifiers, commands, paths and flags exactly as on screen; do not capitalize or add punctuation to commands; wrap nothing in quotes unless dictated.
+<context>
+App: Example — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Да, сейчас
+Привет! Скинь, пожалуйста, ссылку на отчёт по продажам
+был(а) недавно
+Лёша Козлов
+</context>
+<transcript>
+привет как дела
+</transcript><|im_end|>
+<|im_start|>assistant

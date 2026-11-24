@@ -1,0 +1,12 @@
+Style: Neutral. Clean, correctly punctuated text in the speaker's own words.
+<context>
+App: unknown app — text field
+</context>
+<transcript>
+привет как дела
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

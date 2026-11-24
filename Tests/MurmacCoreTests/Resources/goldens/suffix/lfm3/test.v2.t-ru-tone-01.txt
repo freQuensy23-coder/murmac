@@ -1,0 +1,21 @@
+Style: Email. Use complete sentences and paragraphs; put a greeting and a sign-off on their own lines only if they were dictated.
+<context>
+App: Outlook — email body
+Field hint: «Текст письма»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+28 мая, Виктор Петрович Сомов пишет:
+Тема
+Re: Договор поставки №14
+Жду проект договора.
+Кому
+BP
+Виктор Петрович Сомов
+Завтра в семь, не забудь
+Calendarceйчac Дмитрий Орлов
+</context>
+<transcript>
+уважаемый виктор петрович направляю вам договор на согласование если будут замечания пожалуйста сообщите до пятницы с уважением елена
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

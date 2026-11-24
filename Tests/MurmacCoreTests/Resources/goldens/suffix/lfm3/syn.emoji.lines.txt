@@ -1,0 +1,15 @@
+Style: Casual chat message. Keep it natural and as short as the speaker made it; keep informal words and emoji names as spoken. A single short sentence may end without a period.
+<context>
+App: Telegram — message field
+Field hint: «Напишите сообщение для 🙂 команды разработки и тестирования…»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Флаг 🇷🇺 и семья 👨👩👧
+Обсудили релиз 🚀 и план на неделю, Обсудили релиз 🚀 и план на неделю, Обсудили релиз 🚀 и план на неделю, Обсудили релиз 🚀 и план на неделю, Обсудили релиз 🚀 и план на неделю, Обсудили релиз 🚀 и план на неделю, Обсудили релиз 🚀 и план на н🎉…
+Отлично 👍🏽 сделаем
+</context>
+<transcript>
+отправь 👍 и 🎉 в чат
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

@@ -1,0 +1,18 @@
+Style: Email. Use complete sentences and paragraphs; put a greeting and a sign-off on their own lines only if they were dictated.
+<context>
+App: Gmail — email body
+Field hint: «Compose email»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Subject Re: Apartment viewing
+CT
+To
+Chloe Taylor
+mia@company.com
+From
+Compose
+</context>
+<transcript>
+you can reach me at j dot doe at gmail dot com
+</transcript><|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,20 @@
+Style: Email. Use complete sentences and paragraphs; put a greeting and a sign-off on their own lines only if they were dictated.
+<context>
+App: Gmail — email body
+Field hint: «Compose email»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+On Today, Helen Wu wrote:
+Subject Re: Q3 report
+Report attached.
+HW
+Helen Wu
+ethan@company.com
+From
+←Reply
+</context>
+<transcript>
+can you summarize the attached report in three bullet points
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

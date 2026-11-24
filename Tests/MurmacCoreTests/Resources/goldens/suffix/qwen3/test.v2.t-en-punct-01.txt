@@ -1,0 +1,24 @@
+Style: Email. Use complete sentences and paragraphs; put a greeting and a sign-off on their own lines only if they were dictated.
+<context>
+App: Outlook — email body
+Field hint: «Compose email»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+On Jan 1, Tom Becker wrote:
+Subject Re: Samples
+Shipped the samples today, tracking attached.
+Тo
+TB
+Tom Becker
+ethan@company.com
+From
+←Reply
+</context>
+<transcript>
+hi tom just wanted to let you know that the package arrived this morning thanks again for sending it so quickly
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

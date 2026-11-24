@@ -1,0 +1,15 @@
+Style: Email. Use complete sentences and paragraphs; put a greeting and a sign-off on their own lines only if they were dictated.
+<context>
+App: Gmail — address field
+Field hint: «To»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+был(а) недавно
+Да, сейчас
+Лёша Козлов
+</context>
+<transcript>
+sarah dot connor at gmail dot com
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

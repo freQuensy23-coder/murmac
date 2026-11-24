@@ -1,0 +1,18 @@
+Style: Notes or a document. Use paragraphs, and lists or headings only when the speaker clearly structured the content that way.
+<context>
+App: Notion — note
+Field hint: «Note»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+IU ≡
+Normal text
+Weekly sync
+</context>
+<transcript>
+agenda for tomorrow one budget review two hiring update three q and a
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

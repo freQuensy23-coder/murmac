@@ -1,0 +1,27 @@
+Style: Search query. Short, no final period, no capitalization of ordinary words, keep it as a query.
+<context>
+App: Chrome — search field
+Field hint: «Поиск»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Все
+Картинки Новости
+Видео Карты
+Похожие запросы
+Сегодня облачно, ночью до минус трёх, ветер северо-западный
+Курсы валют на сегодня
+Как приготовить сырники: простой рецепт с фото
+Расписание электричек на завтра
+Отзывы покупателей и вопросы о товаре
+Показать ещё
+Доброе утро! Как спалось? Нормально, только кофе закончился
+Купи по дороге молоко, пожалуйста Ладно, после работы зайду в
+магазин
+Вроде дождь в субботу, а в воскресенье солнце Тогда на дачу едем в
+воскресенье
+</context>
+<transcript>
+погода в казани на выходные
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

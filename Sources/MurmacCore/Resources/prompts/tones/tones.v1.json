@@ -1,0 +1,49 @@
+{
+  "_comment": "Per-app style lines. Rendered as the first line of the user message: 'Style: <text>'. Trusted (comes from the app, not the screen). Keep each line short and never contradict the system prompt. 'default' is used when the category is unknown. Users may override a category's text in Settings; the override replaces 'text' verbatim.",
+  "version": 1,
+  "categories": {
+    "messaging": {
+      "label": "Messengers",
+      "text": "Casual chat message. Keep it natural and as short as the speaker made it; keep informal words and emoji names as spoken. A single short sentence may end without a period."
+    },
+    "email": {
+      "label": "Email",
+      "text": "Email. Use complete sentences and paragraphs; put a greeting and a sign-off on their own lines only if they were dictated."
+    },
+    "notes": {
+      "label": "Notes and documents",
+      "text": "Notes or a document. Use paragraphs, and lists or headings only when the speaker clearly structured the content that way."
+    },
+    "work_chat": {
+      "label": "Work chat (Slack, Teams, Mattermost)",
+      "text": "Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen."
+    },
+    "code": {
+      "label": "Code editors and terminals",
+      "text": "Technical input. Keep identifiers, commands, paths and flags exactly as on screen; do not capitalize or add punctuation to commands; wrap nothing in quotes unless dictated."
+    },
+    "search": {
+      "label": "Search and address bars",
+      "text": "Search query. Short, no final period, no capitalization of ordinary words, keep it as a query."
+    },
+    "social": {
+      "label": "Social posts and comments",
+      "text": "Social media post or comment. Keep the speaker's voice and informal style; do not add hashtags or emoji that were not dictated."
+    },
+    "default": {
+      "label": "Everything else",
+      "text": "Neutral. Clean, correctly punctuated text in the speaker's own words."
+    },
+    "address": {
+      "label": "Address fields (email, URL)",
+      "text": "Address field. Output the literal address or identifier only: spoken 'at'/'собака' as @, 'dot'/'точка' as '.', no spaces, no capitalization, no final period."
+    }
+  },
+  "field_overrides": {
+    "_comment": "Applied after the app category, from the focused field's AccessibilityNodeInfo.getInputType() variation bits (android.text.InputType). Password variations never reach the LLM (see CONTEXT_AND_PROMPT.md, privacy).",
+    "TYPE_TEXT_VARIATION_URI": "address",
+    "TYPE_TEXT_VARIATION_EMAIL_ADDRESS": "address",
+    "TYPE_TEXT_VARIATION_WEB_EMAIL_ADDRESS": "address",
+    "TYPE_TEXT_VARIATION_EMAIL_SUBJECT": "default"
+  }
+}

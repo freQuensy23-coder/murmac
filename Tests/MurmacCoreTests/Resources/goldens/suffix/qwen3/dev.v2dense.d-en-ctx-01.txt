@@ -1,0 +1,54 @@
+Style: Email. Use complete sentences and paragraphs; put a greeting and a sign-off on their own lines only if they were dictated.
+<context>
+App: Gmail — email body
+Field hint: «Compose email»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Mail
+Meet
+out of coffee
+Morning! How did you sleep?
+Compose
+Hello, please find attached...
+Invoice for November
+Forward
+Катя
+Wed
+Reply all
+Приглашение на встречу Уважаемый клиент, сооб...
+Send
+Sat
+Travel Desk
+Best regards, HR team
+Your order has shipped Dear customer, we would li..
+If you have any questions, reply to the team address.
+Grace Lee
+Fri
+do on your side.
+Weekly newsletter Hey! As we discussed...
+Parking passes renew automatically, nothing to
+Bank
+January 2.
+Hi all, a reminder that the office will be closed over the holidays, from December 24 through
+Booking confirmation Hi there, just a reminder tha...
+вН
+Ben Harris
+scan.pdf
+Happy to help, ping me anytime.
+Call recap Happy to help, ping me anyt..
+to me
+Joaquin Ortega 10:02
+Joaquin Ortega
+Primary
+Inbox
+Search in mail
+CT
+</context>
+<transcript>
+thanks wakeen ortega for jumping on the call
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

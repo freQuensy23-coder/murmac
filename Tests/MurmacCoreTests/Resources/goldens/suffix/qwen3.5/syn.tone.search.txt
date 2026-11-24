@@ -1,0 +1,19 @@
+Style: Search query. Short, no final period, no capitalization of ordinary words, keep it as a query.
+<context>
+App: Example — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Да, сейчас
+Привет! Скинь, пожалуйста, ссылку на отчёт по продажам
+был(а) недавно
+Лёша Козлов
+</context>
+<transcript>
+привет как дела
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

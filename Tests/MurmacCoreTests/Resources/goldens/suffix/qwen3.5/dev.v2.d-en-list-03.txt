@@ -1,0 +1,19 @@
+Style: Notes or a document. Use paragraphs, and lists or headings only when the speaker clearly structured the content that way.
+<context>
+App: Chrome — text field
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+New issue · murmur-app
+Allow this app to send you notifications?
+Allow
+Don't allow
+Edited 17:22
+</context>
+<transcript>
+steps to reproduce one open the app two tap settings three rotate the phone
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

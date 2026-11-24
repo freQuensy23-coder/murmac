@@ -1,0 +1,2 @@
+{"name": "default.v5", "system": "default.v5", "shots": "shots/default.v4.jsonl", "ctx2": {},
+ "_comment": "default.v4 with two rule edits after the real-OCR dev run: a positive, example-based instruction to spell heard terms as on screen (v4 under-used OCR terms), and 'the command word never appears' for spoken punctuation. Same shots as v4."}

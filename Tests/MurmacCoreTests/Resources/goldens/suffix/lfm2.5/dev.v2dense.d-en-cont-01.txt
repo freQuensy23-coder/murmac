@@ -1,0 +1,33 @@
+Style: Email. Use complete sentences and paragraphs; put a greeting and a sign-off on their own lines only if they were dictated.
+<context>
+App: Gmail — email body
+Field hint: «Compose email»
+Dictation language: English
+Text already in the field before the cursor: «Hi Sam,»
+Screen text (OCR, nearest to the field first):
+Inbox
+Subject Re: Offsite
+Hi all, a reminder that the office will be closed over the holidays, from December 24 through January 2.
+Parking passes renew automatically, nothing to do on your side.
+Тo
+Дача
+If you have any questions, reply to the team address.
+From
+olivia@yandex.ru
+Best regards, HR team
+Send
+← Compose
+Reply all
+Forward
+Morning! How did you sleep? Fine, but we're out of coffee
+Can you grab some milk on the way? Sure, I'll stop by the store after work
+Rain on Saturday, sunny on Sunday apparently Then let's do the hike on Sunday
+Mom called asking about the holidays I'll call her back tonight
+I left the keys with the neighbor Don't forget the charger this time
+Can you send the address again? Stuck in traffic, running about fifteen late
+No worrioe wo'ro loto toe Uoe onuone eoon mu umhrollo?
+</context>
+<transcript>
+hope you had a great weekend
+</transcript><|im_end|>
+<|im_start|>assistant

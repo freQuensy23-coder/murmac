@@ -1,0 +1,18 @@
+Style: Email. Use complete sentences and paragraphs; put a greeting and a sign-off on their own lines only if they were dictated.
+<context>
+App: Gmail — email body
+Field hint: «Compose email»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Jenny Alvarez, Onboarding v2
+Can you summarize what you found?
+to me
+MF
+Mark Fischer 10:02
+Onboarding drop-off
+Inbox
+</context>
+<transcript>
+Hey Mark, so um I wanted to follow up on our conversation from yesterday about the onboarding flow. Basically, the main issue is that new users drop off at the second step, the one where we ask them to connect their calendar. Uh, we're seeing something like a forty percent drop at that point, which is, you know, way higher than any other step. I talked to Jenny from the design team and she thinks we should make that step optional, or at least move it to the end, after the user has already seen some value. I kind of agree with her. The other thing is the welcome email. It goes out, uh, about two hours after sign up, but by then most people have already closed the app. So I'd suggest we send it right away, or no, actually, within five minutes, so it doesn't look like spam. Can we, um, can we discuss this on Thursday? I can put together a short doc with the numbers before then. Let me know if that works for you. Thanks, Alex.
+</transcript><|im_end|>
+<|im_start|>assistant

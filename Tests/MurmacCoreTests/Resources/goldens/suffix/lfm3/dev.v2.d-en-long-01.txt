@@ -1,0 +1,14 @@
+Style: Notes or a document. Use paragraphs, and lists or headings only when the speaker clearly structured the content that way.
+<context>
+App: Notion — note
+Field hint: «Note»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Normal text
+Product review 11/18
+</context>
+<transcript>
+Okay, so notes for the product review. Um, the main news is that the new search is a lot faster, like, about three times faster on the p95, which is great. But the relevance got worse for short queries, especially single words. Sarah thinks it's the new tokenizer, uh, and she's going to run an A/B test next week to confirm. Then mobile. The Android app is still crashing on some Samsung devices when you rotate the screen during upload. We have a fix, but it's not, um, it's not released yet. It should go out with version 3.4 on Tuesday, no, Wednesday, because Tuesday is the code freeze. Then pricing. Nobody really liked the idea of removing the free tier, so we're keeping it, but we'll limit it to three projects instead of five. Oh, and legal still hasn't approved the new privacy policy, so we can't launch in the EU until that's done. I need to follow up with them on Monday. That's it for now.
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

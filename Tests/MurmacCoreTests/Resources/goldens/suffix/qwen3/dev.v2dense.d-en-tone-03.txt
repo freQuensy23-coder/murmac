@@ -1,0 +1,37 @@
+Style: Social media post or comment. Keep the speaker's voice and informal style; do not add hashtags or emoji that were not dictated.
+<context>
+App: X — text field
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Mar 13
+Можно я позвоню вечером?
+Mia Clark
+Sep 24
+Book club See you soon
+Jul 5
+Haha
+EW
+Wilson
+Jun 10
+Ben Harris Не забудь зонт
+Wed
+Миша Лебедев Купи, пожалуйста, хлеб
+Sat
+WH
+Weekend hikes Send me the address
+Thu
+Don't forget the umbrella
+Семья
+Team updates С днём рождения!
+Chloe Taylor Great
+last seen recently
+Chats
+</context>
+<transcript>
+just shipped my first android app and honestly i'm kind of proud of it
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

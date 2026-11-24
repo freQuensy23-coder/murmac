@@ -1,0 +1,21 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Скопировано в буфер обмена
+Отменить
+Postgres, billing-api
+payments-api, PagerDuty, Артём Ковалёв,
+28 марта
+# incidents 6 участников
+</context>
+<transcript>
+Короче, апдейт по вчерашнему инциденту. Примерно в 23:10 у нас начали падать запросы к payments-api, error rate вырос до 30 процентов. Первым заметил Артём, он получил алерт в PagerDuty и сразу позвал меня. Мы сначала думали, что это база, но нет, с Postgres всё было нормально. В итоге оказалось, что после деплоя в 22:45 у нас поменялся конфиг connection pool, и сервис упирался в лимит соединений. Мы откатили релиз, ой, точнее, сначала подняли лимит руками, а потом уже откатили релиз, и к 23:40 всё восстановилось. Что делаем дальше. Во-первых, добавляем алерт на количество соединений. Во-вторых, пишем postmortem, его берёт на себя Артём, дедлайн пятница. И в-третьих, ну, надо наконец-то сделать canary deploy для этого сервиса, чтобы такие вещи ловить до того, как они ударят по всем пользователям. Отдельное спасибо Лене из SRE, она очень быстро нашла нужный дашборд в Grafana и сэкономила нам, наверное, минут двадцать. Если есть вопросы, пишите в тред.
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

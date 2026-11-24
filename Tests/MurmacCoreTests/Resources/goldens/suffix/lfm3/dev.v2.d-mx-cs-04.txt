@@ -1,0 +1,12 @@
+Style: Social media post or comment. Keep the speaker's voice and informal style; do not add hashtags or emoji that were not dictated.
+<context>
+App: X — text field
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+← Запись
+</context>
+<transcript>
+это был такой game changer для нашей команды seriously
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

@@ -1,0 +1,19 @@
+Style: Email. Use complete sentences and paragraphs; put a greeting and a sign-off on their own lines only if they were dictated.
+<context>
+App: Gmail — email body
+Field hint: «Compose email»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Undo
+Joaquin Castro, Acme Corp
+Happy to help, ping me anytime.
+to me
+JO
+Joaquin Ortega 10:02
+Call recap
+Inbox
+</context>
+<transcript>
+thanks wakeen ortega for jumping on the call
+</transcript><|im_end|>
+<|im_start|>assistant

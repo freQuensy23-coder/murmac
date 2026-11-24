@@ -1,0 +1,47 @@
+Style: Casual chat message. Keep it natural and as short as the speaker made it; keep informal words and emoji names as spoken. A single short sentence may end without a period.
+<context>
+App: Telegram — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Ещё нужен доступ к ClickHouse кластеру prod-eu-2?
+Grafana no kube-prometheus
+Привет! Скинь ссылку на дашборд в
+Отлично
+Завтра в семь, не забудь
+Папа
+Голосовое сообщение
+Мот
+17 ноября
+Спасибо большое!
+BC
+Юля Соколова
+Посмотри, когда будет вр..
+вс
+Бабушка
+All done
+РЧ
+пт
+Родительский чат 5Б
+Фото с выходных
+ДО
+Дмитрий Орлов
+Я уже выхожу
+BН
+Ben Harris
+Ещё нужен доступ к Click..
+Тимур Галиев, Airflow, PostgreSQL 17
+ЛК
+Лёша Козлов
+Закреплённое сообщение
+был(а) недавно
+Чаты
+</context>
+<transcript>
+да тимур галеев уже выдал доступ к клик хаусу а дашборд в графане скину вечером
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

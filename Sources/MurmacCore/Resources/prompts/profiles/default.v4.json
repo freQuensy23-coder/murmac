@@ -1,0 +1,2 @@
+{"name": "default.v4", "system": "default.v4", "shots": "shots/default.v4.jsonl", "ctx2": {},
+ "_comment": "ctx v2 (OCR screen text). v3 rules reordered (no-translation first, OCR paragraph) + 15 few-shot chat turns with OCR contexts; ctx2 {} = render.CTX2_DEFAULT."}

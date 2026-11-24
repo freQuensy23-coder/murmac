@@ -1,0 +1,14 @@
+Style: Address field. Output the literal address or identifier only: spoken 'at'/'собака' as @, 'dot'/'точка' as '.', no spaces, no capitalization, no final period.
+<context>
+App: Gmail — address field
+Field hint: «Адрес»
+Dictation language: Russian
+</context>
+<transcript>
+олег собака мурмур точка ап
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

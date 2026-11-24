@@ -1,0 +1,154 @@
+{
+ "about": "WP-04 golden corpus; regenerate with python3 -I core/prompt/tools/make_goldens.py",
+ "sources": [
+  "eval/sets/dev.v2.jsonl",
+  "eval/sets/test.v2.jsonl",
+  "eval/smoke_cases.v2.jsonl",
+  "eval/sets/dev.v2dense.jsonl",
+  "synthetic (make_goldens.py)"
+ ],
+ "profiles": [
+  "default.v1",
+  "default.v4",
+  "default.v4s",
+  "finetuned.v1"
+ ],
+ "templates": [
+  "qwen3.5",
+  "qwen3",
+  "lfm3",
+  "lfm2.5"
+ ],
+ "variants": [
+  "plain",
+  "prefs_short",
+  "prefs_1000",
+  "prefs_1500",
+  "prefs_ctrl_crlf",
+  "prefs_blank",
+  "override_crlf",
+  "override_lf",
+  "override_crlf_prefs"
+ ],
+ "counts": {
+  "cases": 313,
+  "goldens": 4996,
+  "prefix_files": 132
+ },
+ "prefix_chars": {
+  "default.v1": {
+   "qwen3.5": 4091,
+   "qwen3": 4091,
+   "lfm3": 4106,
+   "lfm2.5": 4106
+  },
+  "default.v4": {
+   "qwen3.5": 11727,
+   "qwen3": 11727,
+   "lfm3": 11967,
+   "lfm2.5": 11742
+  },
+  "default.v4s": {
+   "qwen3.5": 7604,
+   "qwen3": 7604,
+   "lfm3": 7739,
+   "lfm2.5": 7619
+  },
+  "finetuned.v1": {
+   "qwen3.5": 483,
+   "qwen3": 483,
+   "lfm3": 498,
+   "lfm2.5": 498
+  }
+ },
+ "prefix_sha256": {
+  "default.v1": {
+   "qwen3.5": "fdec5d39f6e5926e9d69f6bd9ac933c44dd2b108337c3c11bbffad24c71ead24",
+   "qwen3": "fdec5d39f6e5926e9d69f6bd9ac933c44dd2b108337c3c11bbffad24c71ead24",
+   "lfm3": "8a83e946c882e6183084f9b4b5788fbd235239c15ac813bdf9faa7f009a7b042",
+   "lfm2.5": "8a83e946c882e6183084f9b4b5788fbd235239c15ac813bdf9faa7f009a7b042"
+  },
+  "default.v4": {
+   "qwen3.5": "82f4c06fafacd4d480897506ce63fe2451976ed4d5fa4e326ad1d6fe188ffb08",
+   "qwen3": "82f4c06fafacd4d480897506ce63fe2451976ed4d5fa4e326ad1d6fe188ffb08",
+   "lfm3": "9afae4fbcf209aa5caad8a20542df8265cbb9e53b0636bff89ddf29ec5c80938",
+   "lfm2.5": "67ce058915464b8e9d880ec67dc7cb21c2436d584057347f04ddf62e0c5a2037"
+  },
+  "default.v4s": {
+   "qwen3.5": "20d1798c7183b73e8c3e6e2346454e93ffd1efdc0b94de31502967cbf2432b75",
+   "qwen3": "20d1798c7183b73e8c3e6e2346454e93ffd1efdc0b94de31502967cbf2432b75",
+   "lfm3": "4dd0b380cf1f18a667d09195e653042ef88f926c9985e16c40ecfda7fdd3b89a",
+   "lfm2.5": "3056e342a52d3061dde88eff0aea66fce1fce71851d645b38e853cd975c917a0"
+  },
+  "finetuned.v1": {
+   "qwen3.5": "2f94c6465ad744efcbadc7fc3c575cf9a22a9a54603e8add1936dc32981c78fc",
+   "qwen3": "2f94c6465ad744efcbadc7fc3c575cf9a22a9a54603e8add1936dc32981c78fc",
+   "lfm3": "f86f9eb08faa53bca2f5dcea84e142036def9509354a4e898a5788c55f490900",
+   "lfm2.5": "f86f9eb08faa53bca2f5dcea84e142036def9509354a4e898a5788c55f490900"
+  }
+ },
+ "layout": {
+  "prefix": "prefix/<profile>.<template>.<variant>.txt",
+  "suffix": "suffix/<template>/<case>.txt",
+  "profiles_per_variant": {
+   "plain": [
+    "default.v1",
+    "default.v4",
+    "default.v4s",
+    "finetuned.v1"
+   ],
+   "prefs_short": [
+    "default.v1",
+    "default.v4",
+    "default.v4s",
+    "finetuned.v1"
+   ],
+   "prefs_1000": [
+    "default.v1",
+    "default.v4",
+    "default.v4s",
+    "finetuned.v1"
+   ],
+   "prefs_1500": [
+    "default.v1",
+    "default.v4",
+    "default.v4s",
+    "finetuned.v1"
+   ],
+   "prefs_ctrl_crlf": [
+    "default.v1",
+    "default.v4",
+    "default.v4s",
+    "finetuned.v1"
+   ],
+   "prefs_blank": [
+    "default.v1",
+    "default.v4",
+    "default.v4s",
+    "finetuned.v1"
+   ],
+   "override_crlf": [
+    "default.v1",
+    "default.v4",
+    "default.v4s"
+   ],
+   "override_lf": [
+    "default.v1",
+    "default.v4",
+    "default.v4s"
+   ],
+   "override_crlf_prefs": [
+    "default.v1",
+    "default.v4",
+    "default.v4s"
+   ]
+  }
+ },
+ "largest": {
+  "case": "syn.variant.prefs_1000",
+  "profile": "default.v4",
+  "template": "lfm3",
+  "prefix": "prefix/default.v4.lfm3.prefs_1000.txt",
+  "full_chars": 13806
+ }
+}

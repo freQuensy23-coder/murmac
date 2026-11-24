@@ -1,0 +1,25 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Teams — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Сегодня
+Женя
+Mama
+Павел Громов
+Ирина Ковалёва
+Личные сообщения
+# design # hiring
+# office
+# announcements
+# random
+# standup
+35 участников
+Acme
+QA
+</context>
+<transcript>
+запусти пайплайн в дженкинсе и посмотри что упало в юнит тестах
+</transcript><|im_end|>
+<|im_start|>assistant

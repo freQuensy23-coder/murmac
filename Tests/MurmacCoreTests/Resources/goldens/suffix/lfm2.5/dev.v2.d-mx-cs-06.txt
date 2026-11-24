@@ -1,0 +1,16 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Teams — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Скопировано в буфер обмена
+Отменить
+Сегодня
+51 участников
+Weekly
+</context>
+<transcript>
+давай обсудим это offline after the call
+</transcript><|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,48 @@
+Style: Casual chat message. Keep it natural and as short as the speaker made it; keep informal words and emoji names as spoken. A single short sentence may end without a period.
+<context>
+App: Telegram — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Виктория Ткаченко
+Голосовое сообщение
+Дмитрий Орлов
+Кто может выйти в среду?
+Отлично
+Вероника Ткачук
+Neighbours
+перезвоню
+Уже еду
+ML
+Мама звонила, спрашивала про праздники Я ей вечером
+Миша Лебедев
+Артём Ахаха
+воскресенье солнце Тогда на дачу едем в воскресенье
+Где встречаемся?
+ПТ
+Роман Зайцев
+Ты видел, какая погода на выходных обещают? Вроде дождь в субботу, а в
+Ты дома?
+Женя
+BC
+CK
+магазин
+Всё получилось
+молоко, пожалуйста Ладно, после работы зайду в
+Дом 12, подъезд 3
+закончился Купи по дороге
+Можно я позвоню ве.
+Нормально, только кофе
+Сергей Кузнецов
+Я не могу
+Смена 12/11
+Смены кафе
+Закреплённое сообщение
+44 участников
+Чаты
+</context>
+<transcript>
+передай веронике ткачок что я возьму её смену в среду
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

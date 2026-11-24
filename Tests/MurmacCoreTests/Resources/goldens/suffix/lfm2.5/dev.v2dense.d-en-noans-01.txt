@@ -1,0 +1,49 @@
+Style: Casual chat message. Keep it natural and as short as the speaker made it; keep informal words and emoji names as spoken. A single short sentence may end without a period.
+<context>
+App: WhatsApp — message field
+Field hint: «Message»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Got it 09:14
+Morning! How did you sleep? Fine, but we're out of coffee Can you grab some milk on the way?
+All done
+AL
+Friday
+Ava Lewis
+Feb 18
+arrive? Yes, it's at the post office until
+Thank you so much! Did the package
+Let me know when you're...
+Aug 27
+Lucas White
+Have a great one!
+Has anyone seen my umbrella? It's hanging by the door Happy birthday!
+Great
+ЕМ
+Ethan Moore
+Can you send the address again? Stuck in traffic, running about fifteen late No worries, we're late too
+Купи, пожалуйста, хл.…
+Sat
+Юля Соколова
+See you soon
+BC
+charger this time
+Book club
+Fri
+with the neighbor Don't forget the
+I'll call her back tonight I left the keys
+Спасибо большое!
+Olivia Brown
+Sure, I'll stop by the store after work Then let's do the hike on Sunday Mom called asking about the holidays
+Got it
+Tom
+Nov 25
+Photos from the weekend
+Родительский чат ... 20:35
+typing...
+Chats
+</context>
+<transcript>
+hey siri what's the weather like tomorrow
+</transcript><|im_end|>
+<|im_start|>assistant

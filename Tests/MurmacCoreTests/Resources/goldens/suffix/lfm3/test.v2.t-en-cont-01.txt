@@ -1,0 +1,28 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Message»
+Dictation language: English
+Text already in the field before the cursor: «Quick update: the migration is done and»
+Screen text (OCR, nearest to the field first):
+Jan 1
+Lucas White
+Ava Lewis
+Mom
+Flatmates
+Direct messages
+# general
+# standup
+# announcements
+# hiring
+# office
+# design
+42 members
+Studio
+# release
+</context>
+<transcript>
+all the tests are passing so we can merge today
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

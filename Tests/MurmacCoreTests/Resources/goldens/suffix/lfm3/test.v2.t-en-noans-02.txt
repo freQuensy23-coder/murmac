@@ -1,0 +1,31 @@
+Style: Email. Use complete sentences and paragraphs; put a greeting and a sign-off on their own lines only if they were dictated.
+<context>
+App: Gmail — email body
+Field hint: «Compose email»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Mail
+Meet
+Meeting invitation Thanks for your purchase. Your ..
+to me
+Compose
+Olivia Brown
+Dad 18:50
+Thu
+Payment receipt Hello, please find attached..
+ВН
+Ben Harris
+Retirement question Call me when you can
+Dad
+IMG_2041.jpg
+Dear customer, we would like to..
+Appointment reminder
+James Carter
+Inbox
+Search in mail
+</context>
+<transcript>
+what's the difference between a roth ira and a traditional ira
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

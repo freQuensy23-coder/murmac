@@ -1,0 +1,16 @@
+Style: Search query. Short, no final period, no capitalization of ordinary words, keep it as a query.
+<context>
+App: Chrome — search field
+Field hint: «Search»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+All
+Videos
+News
+Maps
+Images
+</context>
+<transcript>
+best ramen near union square open now
+</transcript><|im_end|>
+<|im_start|>assistant

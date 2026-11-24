@@ -1,0 +1,18 @@
+Style: Search query. Short, no final period, no capitalization of ordinary words, keep it as a query.
+<context>
+App: Chrome — search field
+Field hint: «Поиск»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Отлично
+Все
+Новости
+Картинки
+Видео
+Карты
+</context>
+<transcript>
+как перенести базу данных постгрес на семнадцатую версию
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

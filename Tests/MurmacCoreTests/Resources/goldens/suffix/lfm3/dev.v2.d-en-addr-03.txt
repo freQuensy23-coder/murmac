@@ -1,0 +1,16 @@
+Style: Casual chat message. Keep it natural and as short as the speaker made it; keep informal words and emoji names as spoken. A single short sentence may end without a period.
+<context>
+App: Samsung Messages — message field
+Field hint: «Message»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Хорошо, договорились
+Happy birthday!
+Today
+Landlord last seen recently
+</context>
+<transcript>
+call me at four one five five five five zero one nine eight
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

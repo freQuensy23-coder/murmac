@@ -1,0 +1,15 @@
+Style: Neutral. Clean, correctly punctuated text in the speaker's own words.
+<context>
+App: unknown app — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Да, сейчас
+Привет! Скинь, пожалуйста, ссылку на отчёт по продажам
+был(а) недавно
+Лёша Козлов
+</context>
+<transcript>
+привет
+</transcript><|im_end|>
+<|im_start|>assistant

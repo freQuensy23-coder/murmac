@@ -1,0 +1,37 @@
+Style: Email. Use complete sentences and paragraphs; put a greeting and a sign-off on their own lines only if they were dictated.
+<context>
+App: Gmail — email body
+Field hint: «Compose email»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+On Today, Helen Wu wrote:
+Subject Re: Q3 report
+Report attached.
+Inbox
+То
+HW
+Helen Wu
+Hi all a reminder that the office will be closed over the holidays, from December 24 through January 2.
+Parking passes renew automatically, nothing to do on your side.
+Sophie Martin All done
+If you have any questions, reply to the team address.
+Почта· now
+Best regards, HR team
+Send
+Reply all
+Forward
+Morning! How did you sleep? Fine, but we're out of coffee
+Can you grab some milk on the way? Sure, I'll stop by the store after work
+Did you see the forecast for the weekend? Rain on Saturday, sunny on Sunday apparently
+Then let's do the hike on Sunday Mom called asking about the holidays
+I'll call her back tonight I left the keys with the neighbor
+Don't forget the charger this time Can you send the address again?
+</context>
+<transcript>
+can you summarize the attached report in three bullet points
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

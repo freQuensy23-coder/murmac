@@ -1,0 +1,16 @@
+Style: Notes or a document. Use paragraphs, and lists or headings only when the speaker clearly structured the content that way.
+<context>
+App: Samsung Notes — note
+Field hint: «Заметка»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+OK
+Дача
+Почтасейчас
+Изменено 21:18
+</context>
+<transcript>
+купить молоко запятая хлеб и яйца точка новая строка позвонить сантехнику восклицательный знак
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

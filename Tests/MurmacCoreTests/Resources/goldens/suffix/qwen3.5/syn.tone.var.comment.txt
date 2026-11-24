@@ -1,0 +1,18 @@
+Style: Neutral. Clean, correctly punctuated text in the speaker's own words.
+<context>
+App: Gmail — address field
+Field hint: «To»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+был(а) недавно
+Да, сейчас
+Лёша Козлов
+</context>
+<transcript>
+sarah dot connor at gmail dot com
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

@@ -1,0 +1,2 @@
+{"name": "default.v2", "system": "default.v2", "shots": "shots/default.v2.jsonl",
+ "_comment": "Rules in the system message + 10 few-shot demonstrations as real chat turns in the exact request format (Style + <context> + <transcript>), ending with an empty-output demo."}

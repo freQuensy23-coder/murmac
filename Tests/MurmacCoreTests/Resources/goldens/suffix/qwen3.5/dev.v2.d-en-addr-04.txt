@@ -1,0 +1,15 @@
+Style: Social media post or comment. Keep the speaker's voice and informal style; do not add hashtags or emoji that were not dictated.
+<context>
+App: X — text field
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+← Post
+</context>
+<transcript>
+my handle is at alex underscore dev
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

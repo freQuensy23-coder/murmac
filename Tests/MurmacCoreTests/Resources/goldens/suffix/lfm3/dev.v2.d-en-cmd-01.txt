@@ -1,0 +1,38 @@
+Style: Email. Use complete sentences and paragraphs; put a greeting and a sign-off on their own lines only if they were dictated.
+<context>
+App: Outlook — email body
+Field hint: «Compose email»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Mail
+Meet
+Изменения в расписа…
+Compose
+MC
+Thu
+Mia Clark
+Thanks for your pu...
+Invoice for November
+Mom
+Mon
+Hi there, just a rem...
+Schedule change
+DC
+Fri
+Dental Clinic
+Your order has shipped Hey! As we discuss...
+ЕМ
+Ethan Moore
+Meeting invitation Спасибо за покупк…
+Почта России
+Appointment reminder Hello, please find a...
+Travel Desk
+Inbox
+Office closure
+Search in mail
+</context>
+<transcript>
+hi all new paragraph the office will be closed on monday period
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

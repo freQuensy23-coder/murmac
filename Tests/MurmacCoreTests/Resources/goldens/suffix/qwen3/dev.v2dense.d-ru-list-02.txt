@@ -1,0 +1,17 @@
+Style: Notes or a document. Use paragraphs, and lists or headings only when the speaker clearly structured the content that way.
+<context>
+App: Notion — note
+Field hint: «Заметка»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Обычный текст
+Релиз 1.0
+</context>
+<transcript>
+шаги для релиза первое собрать билд второе ну протестировать на устройствах и третье отправить в стор
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

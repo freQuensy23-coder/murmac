@@ -1,0 +1,2260 @@
+{
+  "schema": 1,
+  "catalogVersion": "2026-11-24.1-macos.1",
+  "generated": "Adapted from murmur catalog.json for macOS (Apple Silicon Metal + sherpa-onnx + Apple Vision OCR)",
+  "defaults": {
+    "asr": {
+      "ru+en": "parakeet-tdt-0.6b-v3",
+      "en": "parakeet-tdt-0.6b-v3",
+      "ru": "gigaam-v3-e2e-rnnt"
+    },
+    "vad": "silero-vad-v5"
+  },
+  "packs": [
+    {
+      "id": "recommended",
+      "title": "Speech + Murmur Cleanup",
+      "recommended": true,
+      "description": "Parakeet speech + Murmur Cleanup (Qwen3.5 2B) + screen reading",
+      "items": [
+        "parakeet-tdt-0.6b-v3",
+        "silero-vad-v5",
+        "murmur-cleanup-qwen3.5-2b"
+      ]
+    },
+    {
+      "id": "light",
+      "title": "Lighter and faster",
+      "description": "Parakeet speech + Murmur Cleanup (Qwen3.5 0.8B) + screen reading",
+      "items": [
+        "parakeet-tdt-0.6b-v3",
+        "silero-vad-v5",
+        "murmur-cleanup-qwen3.5-0.8b"
+      ]
+    },
+    {
+      "id": "speech-only",
+      "title": "Speech only",
+      "description": "No cleanup",
+      "items": [
+        "parakeet-tdt-0.6b-v3",
+        "silero-vad-v5"
+      ]
+    }
+  ],
+  "models": [
+    {
+      "id": "parakeet-tdt-0.6b-v3",
+      "kind": "asr",
+      "displayName": "Parakeet TDT 0.6B v3",
+      "publisher": "NVIDIA",
+      "family": "parakeet",
+      "baseRepo": "nvidia/parakeet-tdt-0.6b-v3",
+      "description": "Russian and English with punctuation; follows language switches between phrases.",
+      "params": 627057286,
+      "paramsLabel": "0.6B",
+      "languages": {
+        "codes": [
+          "en",
+          "es",
+          "fr",
+          "de",
+          "bg",
+          "hr",
+          "cs",
+          "da",
+          "nl",
+          "et",
+          "fi",
+          "el",
+          "hu",
+          "it",
+          "lv",
+          "lt",
+          "mt",
+          "pl",
+          "pt",
+          "ro",
+          "sk",
+          "sl",
+          "sv",
+          "ru",
+          "uk"
+        ],
+        "count": 25,
+        "mode": "auto"
+      },
+      "license": {
+        "id": "CC-BY-4.0"
+      },
+      "tier": "recommended",
+      "asr": {
+        "streaming": false,
+        "punctuation": true,
+        "casing": true
+      },
+      "artifacts": [
+        {
+          "id": "parakeet-tdt-0.6b-v3@onnx-int8",
+          "runtime": "sherpa/offline-transducer",
+          "format": "sherpa-onnx",
+          "units": [
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "encoder.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8/resolve/ed5d745623472f97cfc2e6c2916ee248798fc5a8/encoder.int8.onnx",
+              "bytes": 652282294,
+              "sha256": "1afbe69c1ffdabee94755f42e4daf1d93549131a3da11356bda84fcef0f2c479",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8",
+              "revision": "ed5d745623472f97cfc2e6c2916ee248798fc5a8",
+              "path": "encoder.int8.onnx"
+            },
+            {
+              "name": "decoder.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8/resolve/ed5d745623472f97cfc2e6c2916ee248798fc5a8/decoder.int8.onnx",
+              "bytes": 11845274,
+              "sha256": "0222a86147299d4dee90edf95b6d13827edb42ad8b7c9cf0b2582f030937c0b5",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8",
+              "revision": "ed5d745623472f97cfc2e6c2916ee248798fc5a8",
+              "path": "decoder.int8.onnx"
+            },
+            {
+              "name": "joiner.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8/resolve/ed5d745623472f97cfc2e6c2916ee248798fc5a8/joiner.int8.onnx",
+              "bytes": 6355277,
+              "sha256": "cbd02f3696e9944970111fb439d9c3fd365a80374565f13f2b9c7007d253fc98",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8",
+              "revision": "ed5d745623472f97cfc2e6c2916ee248798fc5a8",
+              "path": "joiner.int8.onnx"
+            },
+            {
+              "name": "tokens.txt",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8/resolve/ed5d745623472f97cfc2e6c2916ee248798fc5a8/tokens.txt",
+              "bytes": 93939,
+              "sha256": "d58544679ea4bc6ac563d1f545eb7d474bd6cfa467f0a6e2c1dc1c7d37e3c35d",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8",
+              "revision": "ed5d745623472f97cfc2e6c2916ee248798fc5a8",
+              "path": "tokens.txt"
+            }
+          ],
+          "layout": {
+            "encoder": "encoder.int8.onnx",
+            "decoder": "decoder.int8.onnx",
+            "joiner": "joiner.int8.onnx",
+            "tokens": "tokens.txt"
+          },
+          "quant": "int8",
+          "memoryMb": {
+            "cpu": 1302
+          }
+        }
+      ],
+      "evidence": "docs/research/verify/asr-ocr.md",
+      "notes": "Default ru+en: host FLEURS WER ru 7.4 / en 7.6 %, mixed ru/en with VAD segments 4.5 %."
+    },
+    {
+      "id": "parakeet-ultra-0.6b",
+      "kind": "asr",
+      "displayName": "Parakeet Ultra 0.6B",
+      "publisher": "NVIDIA",
+      "family": "parakeet",
+      "baseRepo": "moondream/parakeet-ultra",
+      "description": "Parakeet variant, CPU build.",
+      "params": 627000000,
+      "paramsLabel": "0.6B",
+      "languages": {
+        "codes": [
+          "en",
+          "es",
+          "fr",
+          "de",
+          "bg",
+          "hr",
+          "cs",
+          "da",
+          "nl",
+          "et",
+          "fi",
+          "el",
+          "hu",
+          "it",
+          "lv",
+          "lt",
+          "mt",
+          "pl",
+          "pt",
+          "ro",
+          "sk",
+          "sl",
+          "sv",
+          "ru",
+          "uk"
+        ],
+        "count": 25,
+        "mode": "auto"
+      },
+      "license": {
+        "id": "CC-BY-4.0"
+      },
+      "tier": "optional",
+      "asr": {
+        "streaming": false,
+        "punctuation": true,
+        "casing": true
+      },
+      "artifacts": [
+        {
+          "id": "parakeet-ultra-0.6b@onnx-int8",
+          "runtime": "sherpa/offline-transducer",
+          "format": "sherpa-onnx",
+          "units": [
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "encoder.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-ultra-int8/resolve/402e1190ce85b9793118ee223db21fb0d12f52db/encoder.int8.onnx",
+              "bytes": 652282345,
+              "sha256": "b43072e1b721f18a3df03fcfeb763ff7c4debdf29843598a3aba2f703e2780a3",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-ultra-int8",
+              "revision": "402e1190ce85b9793118ee223db21fb0d12f52db",
+              "path": "encoder.int8.onnx"
+            },
+            {
+              "name": "decoder.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-ultra-int8/resolve/402e1190ce85b9793118ee223db21fb0d12f52db/decoder.int8.onnx",
+              "bytes": 11845274,
+              "sha256": "1fab98fe6c12aded87d2da66272cc9e148d0a0044ce3850a12fe56302ec4a922",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-ultra-int8",
+              "revision": "402e1190ce85b9793118ee223db21fb0d12f52db",
+              "path": "decoder.int8.onnx"
+            },
+            {
+              "name": "joiner.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-ultra-int8/resolve/402e1190ce85b9793118ee223db21fb0d12f52db/joiner.int8.onnx",
+              "bytes": 6355277,
+              "sha256": "8a71aaccfdba3d451775507a889afd2257d2e754463fd81095a8c8f290f924c2",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-ultra-int8",
+              "revision": "402e1190ce85b9793118ee223db21fb0d12f52db",
+              "path": "joiner.int8.onnx"
+            },
+            {
+              "name": "tokens.txt",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-ultra-int8/resolve/402e1190ce85b9793118ee223db21fb0d12f52db/tokens.txt",
+              "bytes": 93939,
+              "sha256": "d58544679ea4bc6ac563d1f545eb7d474bd6cfa467f0a6e2c1dc1c7d37e3c35d",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-ultra-int8",
+              "revision": "402e1190ce85b9793118ee223db21fb0d12f52db",
+              "path": "tokens.txt"
+            }
+          ],
+          "layout": {
+            "encoder": "encoder.int8.onnx",
+            "decoder": "decoder.int8.onnx",
+            "joiner": "joiner.int8.onnx",
+            "tokens": "tokens.txt"
+          },
+          "quant": "int8",
+          "memoryMb": {
+            "cpu": 960
+          },
+          "notes": "memoryMb estimated (download bytes x 1.5)."
+        }
+      ],
+      "evidence": "docs/research/verify/asr-ocr.md",
+      "followUps": [
+        {
+          "id": "npu-port",
+          "note": "No SM8750 context binary published; compile with QAIRT 2.52 if it proves better than v3."
+        }
+      ]
+    },
+    {
+      "id": "gigaam-v3-e2e-rnnt",
+      "kind": "asr",
+      "displayName": "GigaAM v3 RNN-T",
+      "publisher": "SberDevices",
+      "family": "gigaam",
+      "baseRepo": "ai-sage/GigaAM-v3 (revision e2e_rnnt)",
+      "description": "Best Russian accuracy; Russian only.",
+      "params": 222500000,
+      "paramsLabel": "~222M (counted from ONNX initializers: encoder 220.7M + decoder 1.1M + joiner 0.7M)",
+      "languages": {
+        "codes": [
+          "ru"
+        ],
+        "count": 1,
+        "mode": "fixed",
+        "note": "Russian-only training; vocabulary contains Latin letters and digits, English words possible but not a supported language"
+      },
+      "license": {
+        "id": "MIT"
+      },
+      "tier": "recommended",
+      "asr": {
+        "streaming": false,
+        "punctuation": true,
+        "casing": true
+      },
+      "artifacts": [
+        {
+          "id": "gigaam-v3-e2e-rnnt@onnx-int8",
+          "runtime": "sherpa/offline-transducer",
+          "format": "sherpa-onnx",
+          "units": [
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "encoder.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-nemo-transducer-punct-giga-am-v3-russian-2025-12-16/resolve/a6039be7cee829a9044a69ac0ebaf1c191217c97/encoder.int8.onnx",
+              "bytes": 224570820,
+              "sha256": "369f35a71bf288d3b8e0391fabd8dba5f2314088d440bca474056b7b4b6e66bf",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-nemo-transducer-punct-giga-am-v3-russian-2025-12-16",
+              "revision": "a6039be7cee829a9044a69ac0ebaf1c191217c97",
+              "path": "encoder.int8.onnx"
+            },
+            {
+              "name": "decoder.onnx",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-nemo-transducer-punct-giga-am-v3-russian-2025-12-16/resolve/a6039be7cee829a9044a69ac0ebaf1c191217c97/decoder.onnx",
+              "bytes": 4600132,
+              "sha256": "38fc7475443ea2a26f63211ca350f73ac50fff824ab7a3876ee2bd610c53bbc4",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-nemo-transducer-punct-giga-am-v3-russian-2025-12-16",
+              "revision": "a6039be7cee829a9044a69ac0ebaf1c191217c97",
+              "path": "decoder.onnx"
+            },
+            {
+              "name": "joiner.onnx",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-nemo-transducer-punct-giga-am-v3-russian-2025-12-16/resolve/a6039be7cee829a9044a69ac0ebaf1c191217c97/joiner.onnx",
+              "bytes": 2712896,
+              "sha256": "602ff7017a93311aad34df1437c8d7f49911353c13d6eae7a6ee7b041339465c",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-nemo-transducer-punct-giga-am-v3-russian-2025-12-16",
+              "revision": "a6039be7cee829a9044a69ac0ebaf1c191217c97",
+              "path": "joiner.onnx"
+            },
+            {
+              "name": "tokens.txt",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-nemo-transducer-punct-giga-am-v3-russian-2025-12-16/resolve/a6039be7cee829a9044a69ac0ebaf1c191217c97/tokens.txt",
+              "bytes": 13354,
+              "sha256": "39abae20e692998290c574e606f11a9edef2902a1995463fcff63d1490cf22b7",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-nemo-transducer-punct-giga-am-v3-russian-2025-12-16",
+              "revision": "a6039be7cee829a9044a69ac0ebaf1c191217c97",
+              "path": "tokens.txt"
+            }
+          ],
+          "layout": {
+            "encoder": "encoder.int8.onnx",
+            "decoder": "decoder.onnx",
+            "joiner": "joiner.onnx",
+            "tokens": "tokens.txt"
+          },
+          "quant": "int8",
+          "maxWindowSec": 20.0,
+          "memoryMb": {
+            "cpu": 414
+          }
+        }
+      ],
+      "evidence": "docs/research/verify/asr-ocr.md",
+      "followUps": [
+        {
+          "id": "npu-port",
+          "note": "CTC variant compiles 100 % onto the HTP (ORT QNN EP, 20 s fixed shape); needs mel front end + CTC decode in the app. Decide after phone CPU numbers."
+        }
+      ],
+      "notes": "Host FLEURS WER ru 4.2 %; English is not supported (71 % WER)."
+    },
+    {
+      "id": "gigaam-v3-e2e-ctc",
+      "kind": "asr",
+      "displayName": "GigaAM v3 CTC",
+      "publisher": "SberDevices",
+      "family": "gigaam",
+      "baseRepo": "ai-sage/GigaAM-v3 (revision e2e_ctc)",
+      "description": "Russian only, CTC decoder.",
+      "params": 220900000,
+      "paramsLabel": "~221M (ONNX initializers)",
+      "languages": {
+        "codes": [
+          "ru"
+        ],
+        "count": 1,
+        "mode": "fixed"
+      },
+      "license": {
+        "id": "MIT"
+      },
+      "tier": "optional",
+      "asr": {
+        "streaming": false,
+        "punctuation": true,
+        "casing": true
+      },
+      "artifacts": [
+        {
+          "id": "gigaam-v3-e2e-ctc@onnx-int8",
+          "runtime": "sherpa/offline-ctc",
+          "format": "sherpa-onnx",
+          "units": [
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-nemo-ctc-punct-giga-am-v3-russian-2025-12-16/resolve/4fb5407ff028a69fec516cdf4c10fac9ddea7c16/model.int8.onnx",
+              "bytes": 224893661,
+              "sha256": "d5fea8df94263c285e54b21e5774b707c707192d3bdbeffd7b1eb07fb6743b35",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-nemo-ctc-punct-giga-am-v3-russian-2025-12-16",
+              "revision": "4fb5407ff028a69fec516cdf4c10fac9ddea7c16",
+              "path": "model.int8.onnx"
+            },
+            {
+              "name": "tokens.txt",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-nemo-ctc-punct-giga-am-v3-russian-2025-12-16/resolve/4fb5407ff028a69fec516cdf4c10fac9ddea7c16/tokens.txt",
+              "bytes": 2007,
+              "sha256": "142de7570b3de5b3035ce111a89c228e80e6085273731d944093ddf24fa539cd",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-nemo-ctc-punct-giga-am-v3-russian-2025-12-16",
+              "revision": "4fb5407ff028a69fec516cdf4c10fac9ddea7c16",
+              "path": "tokens.txt"
+            }
+          ],
+          "layout": {
+            "model": "model.int8.onnx",
+            "tokens": "tokens.txt"
+          },
+          "quant": "int8",
+          "maxWindowSec": 20.0,
+          "memoryMb": {
+            "cpu": 401
+          }
+        }
+      ],
+      "evidence": "docs/research/verify/asr-ocr.md",
+      "followUps": [
+        {
+          "id": "npu-port",
+          "note": "fp16 [1,64,2000] compiles 100 % onto the HTP (asr-ocr.md 5.4)."
+        }
+      ]
+    },
+    {
+      "id": "t-one",
+      "kind": "asr",
+      "displayName": "T-one",
+      "publisher": "T-Bank",
+      "family": "t-one",
+      "baseRepo": "t-tech/T-one",
+      "description": "Russian streaming, lowercase without punctuation.",
+      "params": 71697827,
+      "paramsLabel": "71M",
+      "languages": {
+        "codes": [
+          "ru"
+        ],
+        "count": 1,
+        "mode": "fixed",
+        "note": "vocabulary = 33 lowercase Cyrillic letters + space: cannot emit Latin, digits or punctuation"
+      },
+      "license": {
+        "id": "Apache-2.0"
+      },
+      "tier": "optional",
+      "asr": {
+        "streaming": true,
+        "punctuation": false,
+        "casing": false,
+        "sampleRate": 8000
+      },
+      "artifacts": [
+        {
+          "id": "t-one@onnx",
+          "runtime": "sherpa/online-t-one",
+          "format": "sherpa-onnx",
+          "units": [
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.onnx",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-streaming-t-one-russian-2025-09-08/resolve/9d63341e0f2d8a8b2edaa825aa1fcfe3c5283b47/model.onnx",
+              "bytes": 144193702,
+              "sha256": "5ded080e2a6c86ecc11bcb0902d77524eb3e8b0844cb0c0754347f5aafb4dabc",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-streaming-t-one-russian-2025-09-08",
+              "revision": "9d63341e0f2d8a8b2edaa825aa1fcfe3c5283b47",
+              "path": "model.onnx"
+            },
+            {
+              "name": "tokens.txt",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-streaming-t-one-russian-2025-09-08/resolve/9d63341e0f2d8a8b2edaa825aa1fcfe3c5283b47/tokens.txt",
+              "bytes": 202,
+              "sha256": "27f7b3ba2096c572375fba1a6b29af1f80d86e08a329940612908112695f97e0",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-streaming-t-one-russian-2025-09-08",
+              "revision": "9d63341e0f2d8a8b2edaa825aa1fcfe3c5283b47",
+              "path": "tokens.txt"
+            }
+          ],
+          "layout": {
+            "model": "model.onnx",
+            "tokens": "tokens.txt"
+          },
+          "memoryMb": {
+            "cpu": 558
+          }
+        }
+      ],
+      "evidence": "docs/research/verify/asr-ocr.md",
+      "followUps": [
+        {
+          "id": "npu-port",
+          "note": "Streaming graph does not compile strictly for HTP (19 partitions + CPU BatchNorm); CPU only for now."
+        }
+      ]
+    },
+    {
+      "id": "nemotron-3.5-asr-streaming-0.6b",
+      "kind": "asr",
+      "displayName": "Nemotron 3.5 ASR Streaming",
+      "publisher": "NVIDIA",
+      "family": "nemotron",
+      "baseRepo": "nvidia/nemotron-3.5-asr-streaming-0.6b",
+      "description": "Live preview while you speak; the final text comes from the selected batch model.",
+      "params": 637997088,
+      "paramsLabel": "0.6B",
+      "languages": {
+        "codes": [
+          "en",
+          "es",
+          "de",
+          "fr",
+          "it",
+          "ar",
+          "ja",
+          "ko",
+          "pt",
+          "ru",
+          "hi",
+          "zh",
+          "vi",
+          "he",
+          "nl",
+          "cs",
+          "da",
+          "pl",
+          "no",
+          "sv",
+          "th",
+          "tr",
+          "bg",
+          "el",
+          "et",
+          "fi",
+          "hr",
+          "hu",
+          "lt",
+          "lv",
+          "ro",
+          "sk",
+          "uk",
+          "mt",
+          "sl"
+        ],
+        "count": 40,
+        "mode": "auto"
+      },
+      "license": {
+        "id": "OpenMDW-1.1"
+      },
+      "tier": "optional",
+      "asr": {
+        "streaming": true,
+        "punctuation": true,
+        "casing": true,
+        "previewOnly": true
+      },
+      "artifacts": [
+        {
+          "id": "nemotron-3.5-asr-streaming-0.6b@onnx-int8-560ms",
+          "runtime": "sherpa/online-transducer",
+          "format": "sherpa-onnx",
+          "units": [
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "encoder.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj2/sherpa-onnx-nemotron-3.5-asr-streaming-0.6b-560ms-int8-2026-06-11/resolve/ab43d895f5985b1bbab8b6eac8607fcdc05343f3/encoder.int8.onnx",
+              "bytes": 657601403,
+              "sha256": "012e9321373af99021415e0b0eb3ec827b4be3153be6f30d9b448fe65e896e68",
+              "source": "huggingface",
+              "repo": "csukuangfj2/sherpa-onnx-nemotron-3.5-asr-streaming-0.6b-560ms-int8-2026-06-11",
+              "revision": "ab43d895f5985b1bbab8b6eac8607fcdc05343f3",
+              "path": "encoder.int8.onnx"
+            },
+            {
+              "name": "decoder.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj2/sherpa-onnx-nemotron-3.5-asr-streaming-0.6b-560ms-int8-2026-06-11/resolve/ab43d895f5985b1bbab8b6eac8607fcdc05343f3/decoder.int8.onnx",
+              "bytes": 14978075,
+              "sha256": "19f9c98fc6d0a2c33a65a43b36fdb2e914c26c0aa9764be3aebc502a1e982fb0",
+              "source": "huggingface",
+              "repo": "csukuangfj2/sherpa-onnx-nemotron-3.5-asr-streaming-0.6b-560ms-int8-2026-06-11",
+              "revision": "ab43d895f5985b1bbab8b6eac8607fcdc05343f3",
+              "path": "decoder.int8.onnx"
+            },
+            {
+              "name": "joiner.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj2/sherpa-onnx-nemotron-3.5-asr-streaming-0.6b-560ms-int8-2026-06-11/resolve/ab43d895f5985b1bbab8b6eac8607fcdc05343f3/joiner.int8.onnx",
+              "bytes": 9504438,
+              "sha256": "4101c7c679a0bc30483794b27a059e34e79232aa2068d78d51231a22c8b0d7ce",
+              "source": "huggingface",
+              "repo": "csukuangfj2/sherpa-onnx-nemotron-3.5-asr-streaming-0.6b-560ms-int8-2026-06-11",
+              "revision": "ab43d895f5985b1bbab8b6eac8607fcdc05343f3",
+              "path": "joiner.int8.onnx"
+            },
+            {
+              "name": "tokens.txt",
+              "url": "https://huggingface.co/csukuangfj2/sherpa-onnx-nemotron-3.5-asr-streaming-0.6b-560ms-int8-2026-06-11/resolve/ab43d895f5985b1bbab8b6eac8607fcdc05343f3/tokens.txt",
+              "bytes": 131440,
+              "sha256": "729cc103155bafa785f9cd45746cd41cabe97eab7182fc04d594129587958f8a",
+              "source": "huggingface",
+              "repo": "csukuangfj2/sherpa-onnx-nemotron-3.5-asr-streaming-0.6b-560ms-int8-2026-06-11",
+              "revision": "ab43d895f5985b1bbab8b6eac8607fcdc05343f3",
+              "path": "tokens.txt"
+            }
+          ],
+          "layout": {
+            "encoder": "encoder.int8.onnx",
+            "decoder": "decoder.int8.onnx",
+            "joiner": "joiner.int8.onnx",
+            "tokens": "tokens.txt"
+          },
+          "quant": "int8",
+          "memoryMb": {
+            "cpu": 977
+          }
+        }
+      ],
+      "evidence": "docs/research/verify/asr-ocr.md",
+      "notes": "Host WER ru 13.9 / en 12.8 %; one stream does not follow ru/en switches (33 % on the mixed clip)."
+    },
+    {
+      "id": "whisper-small",
+      "kind": "asr",
+      "displayName": "Whisper Small",
+      "publisher": "OpenAI",
+      "family": "whisper",
+      "baseRepo": "openai/whisper-small",
+      "description": "99 languages; 30 s per call.",
+      "params": 241734912,
+      "paramsLabel": "242M",
+      "languages": {
+        "codes": [
+          "en",
+          "zh",
+          "de",
+          "es",
+          "ru",
+          "ko",
+          "fr",
+          "ja",
+          "pt",
+          "tr",
+          "pl",
+          "ca",
+          "nl",
+          "ar",
+          "sv",
+          "it",
+          "id",
+          "hi",
+          "fi",
+          "vi",
+          "he",
+          "uk",
+          "el",
+          "ms",
+          "cs",
+          "ro",
+          "da",
+          "hu",
+          "ta",
+          "no",
+          "th",
+          "ur",
+          "hr",
+          "bg",
+          "lt",
+          "la",
+          "mi",
+          "ml",
+          "cy",
+          "sk",
+          "te",
+          "fa",
+          "lv",
+          "bn",
+          "sr",
+          "az",
+          "sl",
+          "kn",
+          "et",
+          "mk",
+          "br",
+          "eu",
+          "is",
+          "hy",
+          "ne",
+          "mn",
+          "bs",
+          "kk",
+          "sq",
+          "sw",
+          "gl",
+          "mr",
+          "pa",
+          "si",
+          "km",
+          "sn",
+          "yo",
+          "so",
+          "af",
+          "oc",
+          "ka",
+          "be",
+          "tg",
+          "sd",
+          "gu",
+          "am",
+          "yi",
+          "lo",
+          "uz",
+          "fo",
+          "ht",
+          "ps",
+          "tk",
+          "nn",
+          "mt",
+          "sa",
+          "lb",
+          "my",
+          "bo",
+          "tl",
+          "mg",
+          "as",
+          "tt",
+          "haw",
+          "ln",
+          "ha",
+          "ba",
+          "jw",
+          "su"
+        ],
+        "count": 99,
+        "mode": "auto"
+      },
+      "license": {
+        "id": "Apache-2.0 (HF repo metadata); OpenAI code MIT"
+      },
+      "tier": "optional",
+      "asr": {
+        "streaming": false,
+        "punctuation": true,
+        "casing": true
+      },
+      "artifacts": [
+        {
+          "id": "whisper-small@onnx-int8",
+          "runtime": "sherpa/offline-whisper",
+          "format": "sherpa-onnx",
+          "units": [
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "small-encoder.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-small/resolve/8f3c18b358db4d1f2fc1eae49d75cd20989e4309/small-encoder.int8.onnx",
+              "bytes": 112442483,
+              "sha256": "4cbe7b22fa9026b843b60a68640c747de05bafb1a11b57edc0e66c232d9f33a9",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-whisper-small",
+              "revision": "8f3c18b358db4d1f2fc1eae49d75cd20989e4309",
+              "path": "small-encoder.int8.onnx"
+            },
+            {
+              "name": "small-decoder.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-small/resolve/8f3c18b358db4d1f2fc1eae49d75cd20989e4309/small-decoder.int8.onnx",
+              "bytes": 262226114,
+              "sha256": "acad50b5c782696e91b55914cc5ab4f756f1532f76e22aa6fc615f39fb69a8ee",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-whisper-small",
+              "revision": "8f3c18b358db4d1f2fc1eae49d75cd20989e4309",
+              "path": "small-decoder.int8.onnx"
+            },
+            {
+              "name": "small-tokens.txt",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-small/resolve/8f3c18b358db4d1f2fc1eae49d75cd20989e4309/small-tokens.txt",
+              "bytes": 816730,
+              "sha256": "b34b360dbb493e781e479794586d661700670d65564001f23024971d1f2fa126",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-whisper-small",
+              "revision": "8f3c18b358db4d1f2fc1eae49d75cd20989e4309",
+              "path": "small-tokens.txt"
+            }
+          ],
+          "layout": {
+            "encoder": "small-encoder.int8.onnx",
+            "decoder": "small-decoder.int8.onnx",
+            "tokens": "small-tokens.txt"
+          },
+          "quant": "int8",
+          "maxWindowSec": 30.0,
+          "memoryMb": {
+            "cpu": 1202
+          }
+        }
+      ],
+      "evidence": "docs/research/verify/asr-ocr.md"
+    },
+    {
+      "id": "whisper-large-v3-turbo",
+      "kind": "asr",
+      "displayName": "Whisper Large v3 Turbo",
+      "publisher": "OpenAI",
+      "family": "whisper",
+      "baseRepo": "openai/whisper-large-v3-turbo",
+      "description": "Most accurate Whisper; too slow on CPU.",
+      "params": 808878080,
+      "paramsLabel": "809M",
+      "languages": {
+        "codes": [
+          "en",
+          "zh",
+          "de",
+          "es",
+          "ru",
+          "ko",
+          "fr",
+          "ja",
+          "pt",
+          "tr",
+          "pl",
+          "ca",
+          "nl",
+          "ar",
+          "sv",
+          "it",
+          "id",
+          "hi",
+          "fi",
+          "vi",
+          "he",
+          "uk",
+          "el",
+          "ms",
+          "cs",
+          "ro",
+          "da",
+          "hu",
+          "ta",
+          "no",
+          "th",
+          "ur",
+          "hr",
+          "bg",
+          "lt",
+          "la",
+          "mi",
+          "ml",
+          "cy",
+          "sk",
+          "te",
+          "fa",
+          "lv",
+          "bn",
+          "sr",
+          "az",
+          "sl",
+          "kn",
+          "et",
+          "mk",
+          "br",
+          "eu",
+          "is",
+          "hy",
+          "ne",
+          "mn",
+          "bs",
+          "kk",
+          "sq",
+          "sw",
+          "gl",
+          "mr",
+          "pa",
+          "si",
+          "km",
+          "sn",
+          "yo",
+          "so",
+          "af",
+          "oc",
+          "ka",
+          "be",
+          "tg",
+          "sd",
+          "gu",
+          "am",
+          "yi",
+          "lo",
+          "uz",
+          "fo",
+          "ht",
+          "ps",
+          "tk",
+          "nn",
+          "mt",
+          "sa",
+          "lb",
+          "my",
+          "bo",
+          "tl",
+          "mg",
+          "as",
+          "tt",
+          "haw",
+          "ln",
+          "ha",
+          "ba",
+          "jw",
+          "su"
+        ],
+        "count": 99,
+        "mode": "auto"
+      },
+      "license": {
+        "id": "MIT"
+      },
+      "tier": "experimental",
+      "asr": {
+        "streaming": false,
+        "punctuation": true,
+        "casing": true
+      },
+      "artifacts": [
+        {
+          "id": "whisper-large-v3-turbo@onnx-int8",
+          "runtime": "sherpa/offline-whisper",
+          "format": "sherpa-onnx",
+          "units": [
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "turbo-encoder.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-turbo/resolve/2ca6ff69fc878651b770880507669577ac41c2ff/turbo-encoder.int8.onnx",
+              "bytes": 674716297,
+              "sha256": "b02dcdf54f348741e93fe732b67d933c8dcb6735655f710640143081db38878b",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-whisper-turbo",
+              "revision": "2ca6ff69fc878651b770880507669577ac41c2ff",
+              "path": "turbo-encoder.int8.onnx"
+            },
+            {
+              "name": "turbo-decoder.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-turbo/resolve/2ca6ff69fc878651b770880507669577ac41c2ff/turbo-decoder.int8.onnx",
+              "bytes": 361080764,
+              "sha256": "20accd02388482eb3a46bd615631adfdc85e1eb2c7db9ea3f02a40ffe6b81547",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-whisper-turbo",
+              "revision": "2ca6ff69fc878651b770880507669577ac41c2ff",
+              "path": "turbo-decoder.int8.onnx"
+            },
+            {
+              "name": "turbo-tokens.txt",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-turbo/resolve/2ca6ff69fc878651b770880507669577ac41c2ff/turbo-tokens.txt",
+              "bytes": 816730,
+              "sha256": "b34b360dbb493e781e479794586d661700670d65564001f23024971d1f2fa126",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-whisper-turbo",
+              "revision": "2ca6ff69fc878651b770880507669577ac41c2ff",
+              "path": "turbo-tokens.txt"
+            }
+          ],
+          "layout": {
+            "encoder": "turbo-encoder.int8.onnx",
+            "decoder": "turbo-decoder.int8.onnx",
+            "tokens": "turbo-tokens.txt"
+          },
+          "quant": "int8",
+          "maxWindowSec": 30.0,
+          "memoryMb": {
+            "cpu": 2067
+          },
+          "notes": "Host RTF 1.2: slower than real time on CPU."
+        }
+      ],
+      "evidence": "docs/research/verify/asr-ocr.md",
+      "followUps": [
+        {
+          "id": "npu-port",
+          "note": "Qualcomm AI Hub w8a16 SM8750 context binary exists (QAIRT 2.50, s3 host); needs a custom runner (I/O differs from sherpa's)."
+        }
+      ]
+    },
+    {
+      "id": "distil-large-v3.5",
+      "kind": "asr",
+      "displayName": "Distil-Whisper Large v3.5",
+      "publisher": "Hugging Face",
+      "family": "whisper",
+      "baseRepo": "distil-whisper/distil-large-v3.5",
+      "description": "English-focused distilled Whisper.",
+      "params": 756000000,
+      "paramsLabel": "756M",
+      "languages": {
+        "codes": [
+          "en"
+        ],
+        "count": 1,
+        "mode": "fixed"
+      },
+      "license": {
+        "id": "MIT"
+      },
+      "tier": "experimental",
+      "asr": {
+        "streaming": false,
+        "punctuation": true,
+        "casing": true
+      },
+      "artifacts": [
+        {
+          "id": "distil-large-v3.5@onnx-int8",
+          "runtime": "sherpa/offline-whisper",
+          "format": "sherpa-onnx",
+          "units": [
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "distil-large-v3.5-encoder.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-distil-large-v3.5/resolve/2933155a51e982b9ebd9ca3b7fb80fc78162fa64/distil-large-v3.5-encoder.int8.onnx",
+              "bytes": 668147593,
+              "sha256": "c30727100ba2dfbe64f2309a2ec44a5049b005d8a6c0acce49952f635083cbdb",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-whisper-distil-large-v3.5",
+              "revision": "2933155a51e982b9ebd9ca3b7fb80fc78162fa64",
+              "path": "distil-large-v3.5-encoder.int8.onnx"
+            },
+            {
+              "name": "distil-large-v3.5-decoder.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-distil-large-v3.5/resolve/2933155a51e982b9ebd9ca3b7fb80fc78162fa64/distil-large-v3.5-decoder.int8.onnx",
+              "bytes": 314871757,
+              "sha256": "7cef98c7b5491ba52a520fd61da957a62e6e64c702c6c8aeac8cdfb146cbdb6a",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-whisper-distil-large-v3.5",
+              "revision": "2933155a51e982b9ebd9ca3b7fb80fc78162fa64",
+              "path": "distil-large-v3.5-decoder.int8.onnx"
+            },
+            {
+              "name": "distil-large-v3.5-tokens.txt",
+              "url": "https://huggingface.co/csukuangfj/sherpa-onnx-whisper-distil-large-v3.5/resolve/2933155a51e982b9ebd9ca3b7fb80fc78162fa64/distil-large-v3.5-tokens.txt",
+              "bytes": 816730,
+              "sha256": "b34b360dbb493e781e479794586d661700670d65564001f23024971d1f2fa126",
+              "source": "huggingface",
+              "repo": "csukuangfj/sherpa-onnx-whisper-distil-large-v3.5",
+              "revision": "2933155a51e982b9ebd9ca3b7fb80fc78162fa64",
+              "path": "distil-large-v3.5-tokens.txt"
+            }
+          ],
+          "layout": {
+            "encoder": "distil-large-v3.5-encoder.int8.onnx",
+            "decoder": "distil-large-v3.5-decoder.int8.onnx",
+            "tokens": "distil-large-v3.5-tokens.txt"
+          },
+          "quant": "int8",
+          "maxWindowSec": 30.0,
+          "memoryMb": {
+            "cpu": 1408
+          },
+          "notes": "memoryMb estimated (download bytes x 1.5)."
+        }
+      ],
+      "evidence": "docs/research/verify/asr-ocr.md",
+      "followUps": [
+        {
+          "id": "npu-port",
+          "note": "No SM8750 binary published."
+        }
+      ]
+    },
+    {
+      "id": "qwen3-asr-0.6b",
+      "kind": "asr",
+      "displayName": "Qwen3-ASR 0.6B",
+      "publisher": "Qwen",
+      "family": "qwen3-asr",
+      "baseRepo": "Qwen/Qwen3-ASR-0.6B",
+      "description": "30 languages; weakest Russian in the host eval (19.9 % WER).",
+      "params": 938008576,
+      "paramsLabel": "0.94B total (BF16 safetensors; \"0.6B\" is the LM part)",
+      "languages": {
+        "codes": [
+          "zh",
+          "en",
+          "yue",
+          "ar",
+          "de",
+          "fr",
+          "es",
+          "pt",
+          "id",
+          "it",
+          "ko",
+          "ru",
+          "th",
+          "vi",
+          "ja",
+          "tr",
+          "hi",
+          "ms",
+          "nl",
+          "sv",
+          "da",
+          "fi",
+          "pl",
+          "cs",
+          "fil",
+          "fa",
+          "el",
+          "hu",
+          "mk",
+          "ro"
+        ],
+        "count": 30,
+        "mode": "auto"
+      },
+      "license": {
+        "id": "Apache-2.0"
+      },
+      "tier": "experimental",
+      "asr": {
+        "streaming": false,
+        "punctuation": true,
+        "casing": true
+      },
+      "artifacts": [
+        {
+          "id": "qwen3-asr-0.6b@onnx-int8",
+          "runtime": "sherpa/offline-qwen3-asr",
+          "format": "sherpa-onnx",
+          "units": [
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "conv_frontend.onnx",
+              "url": "https://huggingface.co/csukuangfj2/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25/resolve/68818b2313fe77bd06f6a7c5068ff3ef59d02b8a/conv_frontend.onnx",
+              "bytes": 44148281,
+              "sha256": "d22dc4423e0940e49884e903d2ea2f7e5567c14fc1aed97e4e26d6b8f208ef9e",
+              "source": "huggingface",
+              "repo": "csukuangfj2/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25",
+              "revision": "68818b2313fe77bd06f6a7c5068ff3ef59d02b8a",
+              "path": "conv_frontend.onnx"
+            },
+            {
+              "name": "encoder.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj2/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25/resolve/68818b2313fe77bd06f6a7c5068ff3ef59d02b8a/encoder.int8.onnx",
+              "bytes": 182491662,
+              "sha256": "60748d3e6744a57c9c91e1b17424a6c2990567e8adceb0783940c03ed98fa9d9",
+              "source": "huggingface",
+              "repo": "csukuangfj2/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25",
+              "revision": "68818b2313fe77bd06f6a7c5068ff3ef59d02b8a",
+              "path": "encoder.int8.onnx"
+            },
+            {
+              "name": "decoder.int8.onnx",
+              "url": "https://huggingface.co/csukuangfj2/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25/resolve/68818b2313fe77bd06f6a7c5068ff3ef59d02b8a/decoder.int8.onnx",
+              "bytes": 755914231,
+              "sha256": "4f6885be5959ae26af3089d38ee7972c5fafbeeb1cf8d5e76eab6d8b61ca5771",
+              "source": "huggingface",
+              "repo": "csukuangfj2/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25",
+              "revision": "68818b2313fe77bd06f6a7c5068ff3ef59d02b8a",
+              "path": "decoder.int8.onnx"
+            },
+            {
+              "name": "merges.txt",
+              "url": "https://huggingface.co/csukuangfj2/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25/resolve/68818b2313fe77bd06f6a7c5068ff3ef59d02b8a/tokenizer/merges.txt",
+              "bytes": 1671853,
+              "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+              "source": "huggingface",
+              "repo": "csukuangfj2/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25",
+              "revision": "68818b2313fe77bd06f6a7c5068ff3ef59d02b8a",
+              "path": "tokenizer/merges.txt"
+            },
+            {
+              "name": "tokenizer_config.json",
+              "url": "https://huggingface.co/csukuangfj2/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25/resolve/68818b2313fe77bd06f6a7c5068ff3ef59d02b8a/tokenizer/tokenizer_config.json",
+              "bytes": 12487,
+              "sha256": "4942d005604266809309cabc9f4e9cb89ce855d59b14681fdc0e1cc62ea26c4c",
+              "source": "huggingface",
+              "repo": "csukuangfj2/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25",
+              "revision": "68818b2313fe77bd06f6a7c5068ff3ef59d02b8a",
+              "path": "tokenizer/tokenizer_config.json"
+            },
+            {
+              "name": "vocab.json",
+              "url": "https://huggingface.co/csukuangfj2/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25/resolve/68818b2313fe77bd06f6a7c5068ff3ef59d02b8a/tokenizer/vocab.json",
+              "bytes": 2776833,
+              "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+              "source": "huggingface",
+              "repo": "csukuangfj2/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25",
+              "revision": "68818b2313fe77bd06f6a7c5068ff3ef59d02b8a",
+              "path": "tokenizer/vocab.json"
+            }
+          ],
+          "layout": {
+            "frontend": "conv_frontend.onnx",
+            "encoder": "encoder.int8.onnx",
+            "decoder": "decoder.int8.onnx",
+            "merges": "merges.txt",
+            "tokenizerConfig": "tokenizer_config.json",
+            "vocab": "vocab.json"
+          },
+          "quant": "int8",
+          "memoryMb": {
+            "cpu": 2390
+          }
+        }
+      ],
+      "evidence": "docs/research/verify/asr-ocr.md"
+    },
+    {
+      "id": "silero-vad-v5",
+      "kind": "vad",
+      "displayName": "Silero VAD v5",
+      "publisher": "Silero",
+      "family": "silero-vad",
+      "description": "Finds pauses so speech can be transcribed while you talk.",
+      "license": {
+        "id": "MIT"
+      },
+      "tier": "recommended",
+      "artifacts": [
+        {
+          "id": "silero-vad-v5@onnx",
+          "runtime": "ort/silero-vad-v5",
+          "format": "onnx",
+          "units": [
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "silero_vad_v5.onnx",
+              "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/silero_vad_v5.onnx",
+              "bytes": 2313101,
+              "sha256": "6b99cbfd39246b6706f98ec13c7c50c6b299181f2474fa05cbc8046acc274396",
+              "source": "github",
+              "repo": "k2-fsa/sherpa-onnx",
+              "revision": "asr-models",
+              "path": "silero_vad_v5.onnx"
+            }
+          ],
+          "layout": {
+            "model": "silero_vad_v5.onnx"
+          },
+          "memoryMb": {
+            "cpu": 30
+          }
+        }
+      ],
+      "evidence": "docs/research/verify/asr-ocr.md"
+    },
+    {
+      "id": "lfm3-1.7b",
+      "kind": "llm",
+      "displayName": "LFM3 1.7B",
+      "publisher": "Liquid AI",
+      "family": "lfm3",
+      "baseRepo": "LiquidAI/LFM3-1.7B",
+      "params": 1728801536,
+      "paramsLabel": "1.73B",
+      "languages": {
+        "codes": [
+          "en",
+          "ar",
+          "zh",
+          "fr",
+          "de",
+          "it",
+          "ja",
+          "ko",
+          "pt",
+          "es",
+          "vi",
+          "th",
+          "id",
+          "hi",
+          "ru",
+          "pl"
+        ],
+        "mode": "auto",
+        "count": 16,
+        "note": "listed by vendor; quality UNVERIFIED"
+      },
+      "license": {
+        "id": "lfm-open-1.0",
+        "url": "https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE",
+        "note": "free only if licensee annual revenue < US$10M; applies to fine-tunes"
+      },
+      "tier": "recommended",
+      "status": "available",
+      "llm": {
+        "template": "lfm3",
+        "promptProfile": "default.v1",
+        "nCtx": 7168,
+        "prefixTokens": 1072,
+        "kvBytesPerToken": 12288,
+        "note": "vendor: disabling 'can be inconsistent'"
+      },
+      "artifacts": [
+        {
+          "id": "lfm3-1.7b@q4_0-qad",
+          "runtime": "llama/gguf",
+          "format": "gguf",
+          "quant": "Q4_0 (QAD)",
+          "units": [
+            "gpu",
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.gguf",
+              "url": "https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF/resolve/cd0c74c575b5c416f3011b5b4c298077f26ca8c2/LFM3-1.7B-QAD-Q4_0.gguf",
+              "bytes": 1049615680,
+              "sha256": "43a7d09a0e9cba91b63eb7052488b9564569bddfd65754d2e426465e572a7452",
+              "source": "huggingface",
+              "repo": "LiquidAI/LFM3-1.7B-GGUF",
+              "revision": "cd0c74c575b5c416f3011b5b4c298077f26ca8c2",
+              "path": "LFM3-1.7B-QAD-Q4_0.gguf"
+            }
+          ],
+          "layout": {
+            "model": "model.gguf"
+          },
+          "memoryMb": {
+            "npu": 1136,
+            "gpu": 1136,
+            "cpu": 1480
+          },
+          "preferredUnit": "npu"
+        },
+        {
+          "id": "lfm3-1.7b@q4_k_m",
+          "runtime": "llama/gguf",
+          "format": "gguf",
+          "quant": "Q4_K_M",
+          "units": [
+            "gpu",
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.gguf",
+              "url": "https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF/resolve/cd0c74c575b5c416f3011b5b4c298077f26ca8c2/LFM3-1.7B-Q4_K_M.gguf",
+              "bytes": 1099627808,
+              "sha256": "3793e1e6e2266919d6e015287221b41100175a98eddaba92e111aed3b05c93c4",
+              "source": "huggingface",
+              "repo": "LiquidAI/LFM3-1.7B-GGUF",
+              "revision": "cd0c74c575b5c416f3011b5b4c298077f26ca8c2",
+              "path": "LFM3-1.7B-Q4_K_M.gguf"
+            }
+          ],
+          "layout": {
+            "model": "model.gguf"
+          },
+          "memoryMb": {
+            "npu": 1136,
+            "gpu": 1136,
+            "cpu": 1480
+          }
+        }
+      ],
+      "evidence": "docs/research/verify/llm-npu.md",
+      "followUps": []
+    },
+    {
+      "id": "lfm2.5-1.2b-instruct",
+      "kind": "llm",
+      "displayName": "LFM2.5 1.2B Instruct",
+      "publisher": "Liquid AI",
+      "family": "lfm2.5",
+      "baseRepo": "LiquidAI/LFM2.5-1.2B-Instruct",
+      "params": 1170340608,
+      "paramsLabel": "1.17B",
+      "languages": {
+        "codes": [
+          "en",
+          "ar",
+          "zh",
+          "fr",
+          "de",
+          "ja",
+          "ko",
+          "es"
+        ],
+        "mode": "auto",
+        "count": 8,
+        "note": "NOT listed by vendor"
+      },
+      "license": {
+        "id": "lfm-open-1.0",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/blob/main/LICENSE",
+        "note": "free only if licensee annual revenue < US$10M"
+      },
+      "tier": "optional",
+      "status": "available",
+      "llm": {
+        "template": "lfm2.5",
+        "promptProfile": "default.v1",
+        "nCtx": 7168,
+        "prefixTokens": 1101,
+        "kvBytesPerToken": 12288
+      },
+      "artifacts": [
+        {
+          "id": "lfm2.5-1.2b-instruct@q4_0-qad",
+          "runtime": "llama/gguf",
+          "format": "gguf",
+          "quant": "Q4_0 (QAD)",
+          "units": [
+            "gpu",
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.gguf",
+              "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF/resolve/8ed288026e23958ad9dfa92d53ed773a8eee7125/LFM2.5-1.2B-Instruct-QAD-Q4_0.gguf",
+              "bytes": 695755488,
+              "sha256": "bb741ebb106d543e9de114b843a3d3d73d51c74b5801e69da2abde821a0cb3e1",
+              "source": "huggingface",
+              "repo": "LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+              "revision": "8ed288026e23958ad9dfa92d53ed773a8eee7125",
+              "path": "LFM2.5-1.2B-Instruct-QAD-Q4_0.gguf"
+            }
+          ],
+          "layout": {
+            "model": "model.gguf"
+          },
+          "memoryMb": {
+            "npu": 836,
+            "gpu": 836,
+            "cpu": 836
+          },
+          "preferredUnit": "npu"
+        },
+        {
+          "id": "lfm2.5-1.2b-instruct@q4_0",
+          "runtime": "llama/gguf",
+          "format": "gguf",
+          "quant": "Q4_0 (PTQ)",
+          "units": [
+            "gpu",
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.gguf",
+              "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF/resolve/8ed288026e23958ad9dfa92d53ed773a8eee7125/LFM2.5-1.2B-Instruct-Q4_0.gguf",
+              "bytes": 695751488,
+              "sha256": "2ea801949d760cdf1a2cc04a54262c22c3c0c54f0769d57760c9adeb0e59233f",
+              "source": "huggingface",
+              "repo": "LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+              "revision": "8ed288026e23958ad9dfa92d53ed773a8eee7125",
+              "path": "LFM2.5-1.2B-Instruct-Q4_0.gguf"
+            }
+          ],
+          "layout": {
+            "model": "model.gguf"
+          },
+          "memoryMb": {
+            "npu": 836,
+            "gpu": 836,
+            "cpu": 836
+          },
+          "preferredUnit": "npu"
+        },
+        {
+          "id": "lfm2.5-1.2b-instruct@q4_k_m",
+          "runtime": "llama/gguf",
+          "format": "gguf",
+          "quant": "Q4_K_M",
+          "units": [
+            "gpu",
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.gguf",
+              "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF/resolve/8ed288026e23958ad9dfa92d53ed773a8eee7125/LFM2.5-1.2B-Instruct-Q4_K_M.gguf",
+              "bytes": 730895168,
+              "sha256": "b1b3de114215d9507409a662a501a631095a479a419584e8a2ded6304b19b4f5",
+              "source": "huggingface",
+              "repo": "LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+              "revision": "8ed288026e23958ad9dfa92d53ed773a8eee7125",
+              "path": "LFM2.5-1.2B-Instruct-Q4_K_M.gguf"
+            }
+          ],
+          "layout": {
+            "model": "model.gguf"
+          },
+          "memoryMb": {
+            "npu": 836,
+            "gpu": 836,
+            "cpu": 836
+          }
+        }
+      ],
+      "evidence": "docs/research/verify/llm-npu.md",
+      "followUps": []
+    },
+    {
+      "id": "lfm2.5-350m",
+      "kind": "llm",
+      "displayName": "LFM2.5 350M",
+      "publisher": "Liquid AI",
+      "family": "lfm2.5",
+      "baseRepo": "LiquidAI/LFM2.5-350M",
+      "params": 354483968,
+      "paramsLabel": "354M",
+      "languages": {
+        "codes": [
+          "en",
+          "ar",
+          "zh",
+          "fr",
+          "de",
+          "ja",
+          "ko",
+          "es",
+          "pt"
+        ],
+        "mode": "auto",
+        "count": 9,
+        "note": "NOT listed by vendor"
+      },
+      "license": {
+        "id": "lfm-open-1.0",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-350M/blob/main/LICENSE",
+        "note": "free only if licensee annual revenue < US$10M"
+      },
+      "tier": "optional",
+      "status": "available",
+      "llm": {
+        "template": "lfm2.5",
+        "promptProfile": "default.v1",
+        "nCtx": 7168,
+        "prefixTokens": 1101
+      },
+      "artifacts": [
+        {
+          "id": "lfm2.5-350m@q4_0-qad",
+          "runtime": "llama/gguf",
+          "format": "gguf",
+          "quant": "Q4_0 (QAD)",
+          "units": [
+            "gpu",
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.gguf",
+              "url": "https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF/resolve/657e078c94084481950a2d555a941481f715536b/LFM2.5-350M-QAD-Q4_0.gguf",
+              "bytes": 219312832,
+              "sha256": "3d10b6ab8fc91a919534b9558e266255aca0bbc7f6d015963599aa9e74e05b1d",
+              "source": "huggingface",
+              "repo": "LiquidAI/LFM2.5-350M-GGUF",
+              "revision": "657e078c94084481950a2d555a941481f715536b",
+              "path": "LFM2.5-350M-QAD-Q4_0.gguf"
+            }
+          ],
+          "layout": {
+            "model": "model.gguf"
+          },
+          "memoryMb": {
+            "npu": 461,
+            "gpu": 461,
+            "cpu": 461
+          },
+          "preferredUnit": "npu"
+        }
+      ],
+      "evidence": "docs/research/verify/llm-npu.md",
+      "followUps": []
+    },
+    {
+      "id": "lfm2.5-2.6b",
+      "kind": "llm",
+      "displayName": "LFM2.5 2.6B (experimental)",
+      "publisher": "Liquid AI",
+      "family": "lfm2.5",
+      "baseRepo": "LiquidAI/LFM2.5-2.6B",
+      "params": 2697198592,
+      "paramsLabel": "2.69B",
+      "languages": {
+        "codes": [
+          "ar",
+          "zh",
+          "en",
+          "fr",
+          "de",
+          "hi",
+          "id",
+          "it",
+          "ja",
+          "ko",
+          "pl",
+          "pt",
+          "ru",
+          "es",
+          "th",
+          "vi"
+        ],
+        "mode": "auto",
+        "count": 16,
+        "note": "listed by vendor; quality UNVERIFIED"
+      },
+      "license": {
+        "id": "lfm-open-1.0",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B/blob/main/LICENSE",
+        "note": "free only if licensee annual revenue < US$10M"
+      },
+      "tier": "experimental",
+      "status": "available",
+      "llm": {
+        "template": "lfm2.5",
+        "promptProfile": "default.v1",
+        "nCtx": 7168,
+        "prefixTokens": 1072
+      },
+      "artifacts": [
+        {
+          "id": "lfm2.5-2.6b@q4_0-qad",
+          "runtime": "llama/gguf",
+          "format": "gguf",
+          "quant": "Q4_0 (QAD)",
+          "units": [
+            "gpu",
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.gguf",
+              "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF/resolve/e7caca5d835a3901a8e0d63e94009429bafafdfc/LFM2.5-2.6B-QAD-Q4_0.gguf",
+              "bytes": 1593894944,
+              "sha256": "a247afd6414918eac8e520a9e6137dc271235461ecbe1180462221d5b8d40b03",
+              "source": "huggingface",
+              "repo": "LiquidAI/LFM2.5-2.6B-GGUF",
+              "revision": "e7caca5d835a3901a8e0d63e94009429bafafdfc",
+              "path": "LFM2.5-2.6B-QAD-Q4_0.gguf"
+            }
+          ],
+          "layout": {
+            "model": "model.gguf"
+          },
+          "memoryMb": {
+            "npu": 2486,
+            "gpu": 2486,
+            "cpu": 2486
+          },
+          "preferredUnit": "npu"
+        }
+      ],
+      "evidence": "docs/research/verify/llm-npu.md",
+      "notes": "Template always opens <think>; no official way to disable reasoning. Experimental.",
+      "followUps": []
+    },
+    {
+      "id": "qwen3.5-0.8b",
+      "kind": "llm",
+      "displayName": "Qwen3.5 0.8B",
+      "publisher": "Qwen",
+      "family": "qwen3.5",
+      "baseRepo": "Qwen/Qwen3.5-0.8B",
+      "params": 873438784,
+      "paramsLabel": "0.8B (LM ~752M; checkpoint includes vision encoder)",
+      "languages": {
+        "codes": [
+          "ru",
+          "en"
+        ],
+        "mode": "auto",
+        "count": 201,
+        "note": "covered by broad claim; quality UNVERIFIED; most token-efficient tokenizer for Russian (1.36 tok/word measured)"
+      },
+      "license": {
+        "id": "apache-2.0",
+        "url": "https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE",
+        "note": "yes"
+      },
+      "tier": "optional",
+      "status": "available",
+      "llm": {
+        "template": "qwen3.5",
+        "promptProfile": "default.v1",
+        "nCtx": 7168,
+        "prefixTokens": 1047,
+        "kvBytesPerToken": 12288
+      },
+      "artifacts": [
+        {
+          "id": "qwen3.5-0.8b@q4_0",
+          "runtime": "llama/gguf",
+          "format": "gguf",
+          "quant": "Q4_0",
+          "units": [
+            "gpu",
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.gguf",
+              "url": "https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/6ab461498e2023f6e3c1baea90a8f0fe38ab64d0/Qwen3.5-0.8B-Q4_0.gguf",
+              "bytes": 507154688,
+              "sha256": "444406ddd926550c724ec18d5120a9d40ded44908a063b0e66e9a7e5464c652c",
+              "source": "huggingface",
+              "repo": "unsloth/Qwen3.5-0.8B-GGUF",
+              "revision": "6ab461498e2023f6e3c1baea90a8f0fe38ab64d0",
+              "path": "Qwen3.5-0.8B-Q4_0.gguf"
+            }
+          ],
+          "layout": {
+            "model": "model.gguf"
+          },
+          "memoryMb": {
+            "npu": 1036,
+            "gpu": 1036,
+            "cpu": 880
+          },
+          "preferredUnit": "cpu"
+        },
+        {
+          "id": "qwen3.5-0.8b@q4_k_m",
+          "runtime": "llama/gguf",
+          "format": "gguf",
+          "quant": "Q4_K_M",
+          "units": [
+            "gpu",
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.gguf",
+              "url": "https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/6ab461498e2023f6e3c1baea90a8f0fe38ab64d0/Qwen3.5-0.8B-Q4_K_M.gguf",
+              "bytes": 532517120,
+              "sha256": "bd258782e35f7f458f8aced1adc053e6e92e89bc735ba3be89d38a06121dc517",
+              "source": "huggingface",
+              "repo": "unsloth/Qwen3.5-0.8B-GGUF",
+              "revision": "6ab461498e2023f6e3c1baea90a8f0fe38ab64d0",
+              "path": "Qwen3.5-0.8B-Q4_K_M.gguf"
+            }
+          ],
+          "layout": {
+            "model": "model.gguf"
+          },
+          "memoryMb": {
+            "npu": 1036,
+            "gpu": 1036,
+            "cpu": 880
+          },
+          "preferredUnit": "cpu"
+        },
+        {
+          "id": "qwen3.5-0.8b@q4_0-ggml-org",
+          "runtime": "llama/gguf",
+          "format": "gguf",
+          "quant": "Q4_0",
+          "units": [
+            "gpu",
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.gguf",
+              "url": "https://huggingface.co/ggml-org/Qwen3.5-0.8B-GGUF/resolve/004fd086eccea9f7cf867aa07ba328773beef81d/Qwen3.5-0.8B-Q4_0.gguf",
+              "bytes": 563036064,
+              "sha256": "57d1997790d1744fba5b40a7317df71ea5e2acee28c47e78f0cce39c0703f8cf",
+              "source": "huggingface",
+              "repo": "ggml-org/Qwen3.5-0.8B-GGUF",
+              "revision": "004fd086eccea9f7cf867aa07ba328773beef81d",
+              "path": "Qwen3.5-0.8B-Q4_0.gguf"
+            }
+          ],
+          "layout": {
+            "model": "model.gguf"
+          },
+          "memoryMb": {
+            "npu": 1036,
+            "gpu": 1036,
+            "cpu": 880
+          },
+          "preferredUnit": "cpu"
+        }
+      ],
+      "evidence": "docs/research/verify/llm-npu.md",
+      "followUps": []
+    },
+    {
+      "id": "qwen3.5-2b",
+      "kind": "llm",
+      "displayName": "Qwen3.5 2B",
+      "publisher": "Qwen",
+      "family": "qwen3.5",
+      "baseRepo": "Qwen/Qwen3.5-2B",
+      "params": 2274069824,
+      "paramsLabel": "2B (LM ~1.88B; checkpoint includes vision encoder)",
+      "languages": {
+        "codes": [
+          "ru",
+          "en"
+        ],
+        "mode": "auto",
+        "count": 201,
+        "note": "covered by broad claim; quality UNVERIFIED"
+      },
+      "license": {
+        "id": "apache-2.0",
+        "url": "https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE",
+        "note": "yes"
+      },
+      "tier": "experimental",
+      "status": "available",
+      "llm": {
+        "template": "qwen3.5",
+        "promptProfile": "default.v1",
+        "nCtx": 7168,
+        "prefixTokens": 1047,
+        "kvBytesPerToken": 12288
+      },
+      "artifacts": [
+        {
+          "id": "qwen3.5-2b@q4_0",
+          "runtime": "llama/gguf",
+          "format": "gguf",
+          "quant": "Q4_0",
+          "units": [
+            "gpu",
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.gguf",
+              "url": "https://huggingface.co/unsloth/Qwen3.5-2B-GGUF/resolve/f6d5376be1edb4d416d56da11e5397a961aca8ae/Qwen3.5-2B-Q4_0.gguf",
+              "bytes": 1214873856,
+              "sha256": "cd70221bebaee0503e0f6717e174250cd7825aa88438b3aabec9ad55731d9bb1",
+              "source": "huggingface",
+              "repo": "unsloth/Qwen3.5-2B-GGUF",
+              "revision": "f6d5376be1edb4d416d56da11e5397a961aca8ae",
+              "path": "Qwen3.5-2B-Q4_0.gguf"
+            }
+          ],
+          "layout": {
+            "model": "model.gguf"
+          },
+          "memoryMb": {
+            "npu": 1536,
+            "gpu": 1536,
+            "cpu": 1536
+          },
+          "preferredUnit": "cpu"
+        },
+        {
+          "id": "qwen3.5-2b@q4_k_m",
+          "runtime": "llama/gguf",
+          "format": "gguf",
+          "quant": "Q4_K_M",
+          "units": [
+            "gpu",
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.gguf",
+              "url": "https://huggingface.co/unsloth/Qwen3.5-2B-GGUF/resolve/f6d5376be1edb4d416d56da11e5397a961aca8ae/Qwen3.5-2B-Q4_K_M.gguf",
+              "bytes": 1280835840,
+              "sha256": "aaf42c8b7c3cab2bf3d69c355048d4a0ee9973d48f16c731c0520ee914699223",
+              "source": "huggingface",
+              "repo": "unsloth/Qwen3.5-2B-GGUF",
+              "revision": "f6d5376be1edb4d416d56da11e5397a961aca8ae",
+              "path": "Qwen3.5-2B-Q4_K_M.gguf"
+            }
+          ],
+          "layout": {
+            "model": "model.gguf"
+          },
+          "memoryMb": {
+            "npu": 1536,
+            "gpu": 1536,
+            "cpu": 1536
+          },
+          "preferredUnit": "cpu"
+        }
+      ],
+      "evidence": "docs/research/verify/llm-npu.md",
+      "followUps": []
+    },
+    {
+      "id": "qwen3-0.6b",
+      "kind": "llm",
+      "displayName": "Qwen3 0.6B (NPU-native)",
+      "publisher": "Qwen",
+      "family": "qwen3",
+      "baseRepo": "Qwen/Qwen3-0.6B",
+      "params": 751632384,
+      "paramsLabel": "0.6B",
+      "languages": {
+        "codes": [
+          "ru",
+          "en"
+        ],
+        "mode": "auto",
+        "count": 2,
+        "note": "covered by broad claim; quality UNVERIFIED"
+      },
+      "license": {
+        "id": "apache-2.0",
+        "url": "https://huggingface.co/Qwen/Qwen3-0.6B/blob/main/LICENSE",
+        "note": "yes"
+      },
+      "tier": "optional",
+      "status": "available",
+      "llm": {
+        "template": "qwen3",
+        "promptProfile": "default.v1",
+        "nCtx": 7168,
+        "prefixTokens": 1062,
+        "kvBytesPerToken": 114688
+      },
+      "artifacts": [
+        {
+          "id": "qwen3-0.6b@q4_0",
+          "runtime": "llama/gguf",
+          "format": "gguf",
+          "quant": "Q4_0",
+          "units": [
+            "gpu",
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.gguf",
+              "url": "https://huggingface.co/unsloth/Qwen3-0.6B-GGUF/resolve/50968a4468ef4233ed78cd7c3de230dd1d61a56b/Qwen3-0.6B-Q4_0.gguf",
+              "bytes": 382156480,
+              "sha256": "33bcc57074ec7b6eada5a90651ee546ec0c2b271002c22baf9f1b2dd1e8f75cb",
+              "source": "huggingface",
+              "repo": "unsloth/Qwen3-0.6B-GGUF",
+              "revision": "50968a4468ef4233ed78cd7c3de230dd1d61a56b",
+              "path": "Qwen3-0.6B-Q4_0.gguf"
+            }
+          ],
+          "layout": {
+            "model": "model.gguf"
+          },
+          "memoryMb": {
+            "npu": 1536,
+            "gpu": 1536,
+            "cpu": 1536
+          },
+          "preferredUnit": "npu"
+        }
+      ],
+      "evidence": "docs/research/verify/llm-npu.md",
+      "followUps": []
+    },
+    {
+      "id": "qwen3-1.7b",
+      "kind": "llm",
+      "displayName": "Qwen3 1.7B (NPU-native)",
+      "publisher": "Qwen",
+      "family": "qwen3",
+      "baseRepo": "Qwen/Qwen3-1.7B",
+      "params": 2031739904,
+      "paramsLabel": "1.7B",
+      "languages": {
+        "codes": [
+          "ru",
+          "en"
+        ],
+        "mode": "auto",
+        "count": 2,
+        "note": "covered by broad claim; quality UNVERIFIED"
+      },
+      "license": {
+        "id": "apache-2.0",
+        "url": "https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE",
+        "note": "yes"
+      },
+      "tier": "experimental",
+      "status": "available",
+      "llm": {
+        "template": "qwen3",
+        "promptProfile": "default.v1",
+        "nCtx": 7168,
+        "prefixTokens": 1062,
+        "kvBytesPerToken": 114688
+      },
+      "artifacts": [
+        {
+          "id": "qwen3-1.7b@q4_0",
+          "runtime": "llama/gguf",
+          "format": "gguf",
+          "quant": "Q4_0",
+          "units": [
+            "gpu",
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.gguf",
+              "url": "https://huggingface.co/unsloth/Qwen3-1.7B-GGUF/resolve/d7f544eead698dbd1f15126ef60b45a1e1933222/Qwen3-1.7B-Q4_0.gguf",
+              "bytes": 1056782912,
+              "sha256": "c876f159707a4e4f70e045106c69db15bfc935a4981706fd4f65c6e7ea1e81c5",
+              "source": "huggingface",
+              "repo": "unsloth/Qwen3-1.7B-GGUF",
+              "revision": "d7f544eead698dbd1f15126ef60b45a1e1933222",
+              "path": "Qwen3-1.7B-Q4_0.gguf"
+            }
+          ],
+          "layout": {
+            "model": "model.gguf"
+          },
+          "memoryMb": {
+            "npu": 1536,
+            "gpu": 1536,
+            "cpu": 1536
+          },
+          "preferredUnit": "npu"
+        }
+      ],
+      "evidence": "docs/research/verify/llm-npu.md",
+      "followUps": []
+    },
+    {
+      "id": "murmur-cleanup-lfm3-1.7b",
+      "kind": "llm",
+      "displayName": "Murmur Cleanup (LFM3 1.7B)",
+      "publisher": "Murmur",
+      "family": "murmur-cleanup",
+      "baseRepo": "LiquidAI/LFM3-1.7B",
+      "params": 1728801536,
+      "paramsLabel": "1.73B",
+      "languages": {
+        "codes": [
+          "ru",
+          "en"
+        ],
+        "mode": "auto",
+        "count": 2
+      },
+      "license": {
+        "id": "lfm-open-1.0 (derivative)",
+        "url": "https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE",
+        "note": "inherits US$10M revenue cap"
+      },
+      "tier": "optional",
+      "status": "available",
+      "llm": {
+        "template": "lfm3",
+        "promptProfile": "finetuned.v2",
+        "nCtx": 6144,
+        "prefixTokens": 121,
+        "kvBytesPerToken": 12288
+      },
+      "artifacts": [
+        {
+          "id": "murmur-cleanup-lfm3-1.7b@q4_0",
+          "runtime": "llama/gguf",
+          "format": "gguf",
+          "quant": "Q4_0",
+          "units": [
+            "gpu",
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.gguf",
+              "url": "https://huggingface.co/satoshiNakomoroReal/murmur-cleanup/resolve/7c4391f5c5e5fe82dd321b21cb69fecd0b879883/murmur-lfm3-1.7b-lfm3-r16-Q4_0.gguf",
+              "bytes": 1049614912,
+              "sha256": "2d3ffe87ee0a50b2cb7ea1087d16f2a02bfd106841b8ec96047812134ade9d52",
+              "source": "huggingface",
+              "repo": "satoshiNakomoroReal/murmur-cleanup",
+              "revision": "7c4391f5c5e5fe82dd321b21cb69fecd0b879883",
+              "path": "murmur-lfm3-1.7b-lfm3-r16-Q4_0.gguf"
+            }
+          ],
+          "layout": {
+            "model": "model.gguf"
+          },
+          "memoryMb": {
+            "npu": 1136,
+            "gpu": 1136,
+            "cpu": 1480
+          },
+          "preferredUnit": "npu"
+        }
+      ],
+      "evidence": "docs/research/verify/llm-npu.md",
+      "description": "Murmur's fine-tuned cleanup model based on LFM3 1.7B."
+    },
+    {
+      "id": "murmur-cleanup-qwen3.5-0.8b",
+      "kind": "llm",
+      "displayName": "Murmur Cleanup (Qwen3.5 0.8B)",
+      "publisher": "Murmur",
+      "family": "murmur-cleanup",
+      "baseRepo": "Qwen/Qwen3.5-0.8B",
+      "params": 873438784,
+      "paramsLabel": "873M",
+      "languages": {
+        "codes": [
+          "ru",
+          "en"
+        ],
+        "mode": "auto",
+        "count": 2
+      },
+      "license": {
+        "id": "apache-2.0 (derivative)",
+        "url": "https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE",
+        "note": "yes"
+      },
+      "tier": "optional",
+      "status": "available",
+      "llm": {
+        "template": "qwen3.5",
+        "promptProfile": "finetuned.v2",
+        "nCtx": 6144,
+        "prefixTokens": 116,
+        "kvBytesPerToken": 12288
+      },
+      "artifacts": [
+        {
+          "id": "murmur-cleanup-qwen3.5-0.8b@q4_0",
+          "runtime": "llama/gguf",
+          "format": "gguf",
+          "quant": "Q4_0",
+          "units": [
+            "gpu",
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.gguf",
+              "url": "https://huggingface.co/satoshiNakomoroReal/murmur-cleanup/resolve/7c4391f5c5e5fe82dd321b21cb69fecd0b879883/murmur-qwen3.5-0.8b-q08-lora-Q4_0.gguf",
+              "bytes": 501450368,
+              "sha256": "eb5aab722d4b51ae36fb853e5aa1423fc5e891dace168a5c2f823a7efc6419b8",
+              "source": "huggingface",
+              "repo": "satoshiNakomoroReal/murmur-cleanup",
+              "revision": "7c4391f5c5e5fe82dd321b21cb69fecd0b879883",
+              "path": "murmur-qwen3.5-0.8b-q08-lora-Q4_0.gguf"
+            }
+          ],
+          "layout": {
+            "model": "model.gguf"
+          },
+          "memoryMb": {
+            "npu": 1036,
+            "gpu": 1036,
+            "cpu": 880
+          },
+          "preferredUnit": "cpu"
+        }
+      ],
+      "evidence": "docs/research/verify/llm-npu.md",
+      "description": "Murmur's fine-tuned cleanup model based on Qwen3.5 0.8B."
+    },
+    {
+      "id": "murmur-cleanup-qwen3.5-2b",
+      "kind": "llm",
+      "displayName": "Murmur Cleanup (Qwen3.5 2B)",
+      "publisher": "Murmur",
+      "family": "murmur-cleanup",
+      "baseRepo": "Qwen/Qwen3.5-2B",
+      "params": 2274069824,
+      "paramsLabel": "2.27B",
+      "languages": {
+        "codes": [
+          "ru",
+          "en"
+        ],
+        "mode": "auto",
+        "count": 2
+      },
+      "license": {
+        "id": "apache-2.0 (derivative)",
+        "url": "https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE",
+        "note": "yes"
+      },
+      "tier": "optional",
+      "status": "available",
+      "llm": {
+        "template": "qwen3.5",
+        "promptProfile": "finetuned.v2",
+        "nCtx": 6144,
+        "prefixTokens": 116,
+        "kvBytesPerToken": 12288
+      },
+      "artifacts": [
+        {
+          "id": "murmur-cleanup-qwen3.5-2b@q4_0",
+          "runtime": "llama/gguf",
+          "format": "gguf",
+          "quant": "Q4_0",
+          "units": [
+            "gpu",
+            "cpu"
+          ],
+          "files": [
+            {
+              "name": "model.gguf",
+              "url": "https://huggingface.co/satoshiNakomoroReal/murmur-cleanup/resolve/7c4391f5c5e5fe82dd321b21cb69fecd0b879883/murmur-qwen3.5-2b-q2-lora-Q4_0.gguf",
+              "bytes": 1202484864,
+              "sha256": "e688d485b11a8a9248a89b40505504362e2f40c996f2629625dbd38a3582b812",
+              "source": "huggingface",
+              "repo": "satoshiNakomoroReal/murmur-cleanup",
+              "revision": "7c4391f5c5e5fe82dd321b21cb69fecd0b879883",
+              "path": "murmur-qwen3.5-2b-q2-lora-Q4_0.gguf"
+            }
+          ],
+          "layout": {
+            "model": "model.gguf"
+          },
+          "memoryMb": {
+            "npu": 1536,
+            "gpu": 1536,
+            "cpu": 1536
+          },
+          "preferredUnit": "cpu"
+        }
+      ],
+      "evidence": "docs/research/verify/llm-npu.md",
+      "description": "Murmur's fine-tuned cleanup model based on Qwen3.5 2B."
+    }
+  ]
+}

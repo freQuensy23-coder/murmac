@@ -1,0 +1,45 @@
+Style: Casual chat message. Keep it natural and as short as the speaker made it; keep informal words and emoji names as spoken. A single short sentence may end without a period.
+<context>
+App: Samsung Messages — message field
+Field hint: «Message»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Mia Clark
+Oct 22
+Send me the address
+Сергей Кузнецов
+Aug 2
+ОК
+Jul 8
+Photos from the weekend
+Apr 14
+Женя
+Sounds good!
+Bera Николаевна
+Nov 5
+Where are we meeting?
+Дача
+Aug 28
+Ethan Moore Tomorrow at seven
+EM
+Фото с выходных
+OB
+Fri
+Olivia Brown
+Let me know when you're fr...
+Chloe Taylor
+Wed
+Happy birthday!
+Liam Johnson
+Завтра в семь, не забудь
+Dan
+Are you home?
+Sophie Martin
+typing...
+Chats
+</context>
+<transcript>
+i think its going to rain later so bring an umbrella and dont forget your keys
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

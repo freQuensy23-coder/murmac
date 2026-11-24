@@ -1,0 +1,31 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Kubernetes, Helm, staging
+8 марта
+Бабушка
+Вера Николаевна
+Катя
+●Бег по субботам
+Личные сообщения
+# random
+# design
+# announcements
+# standup
+# office
+# support
+13 участников
+Отдел
+# general
+</context>
+<transcript>
+хелм чарт для кубернетиса я обновил можно катить на стейджинг
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

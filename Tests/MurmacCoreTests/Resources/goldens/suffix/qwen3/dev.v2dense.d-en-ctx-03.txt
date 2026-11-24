@@ -1,0 +1,36 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Message»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+#finance 18:50 Can you grab some milk on the way? Sure, I'll stop by the store after work See you then
+Fine, but we're out of coffee
+#finance 13:05 Happy birthday! Have a great one! Thank you so much! Did the package arrive? Yes, it's at the post office until Friday Morning! How did you sleep?
+Don't forget the charger this time Can you send the address again? Stuck in traffic, running about fifteen late 2 replies No worries, we're late too Has anyone seen my umbrella? It's hanging by the door 4 replies
+Weekend hikes
+James Carter
+the keys with the neighbor
+Светлана Морозова
+Olivia Brown
+Did you see the forecast for the weekend? Rain on Saturday, sunny on Sunday apparently Then let's do the hike on Sunday Evgeny Sokolov, Evgenia Sokolova, FY27 budget Mom called asking about the holidays I'll call her back tonight I left
+Direct messages
+#finance 09:14
+# standup
+Nov 13
+# general # hiring
+# announcements
+# support
+# random
+69 members
+Команда
+# finance
+</context>
+<transcript>
+can you ask yevgeny sokolof to approve the budget
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

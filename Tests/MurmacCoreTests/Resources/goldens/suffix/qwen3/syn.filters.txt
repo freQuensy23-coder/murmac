@@ -1,0 +1,20 @@
+Style: Casual chat message. Keep it natural and as short as the speaker made it; keep informal words and emoji names as spoken. A single short sentence may end without a period.
+<context>
+App: Telegram — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Очень длинный статус 12:00
+Ровно 0.5
+ΟΔΟΣ
+Straße
+²³
+</context>
+<transcript>
+проверь фильтры
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

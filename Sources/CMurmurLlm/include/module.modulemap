@@ -1,0 +1,4 @@
+module CMurmurLlm {
+    header "murmur_llm.h"
+    export *
+}

@@ -1,0 +1,21 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Message»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Priority
+Medium
+Assignee
+Noah Davis
+ND
+Status
+Done
+#design
+←MUR-1225
+</context>
+<transcript>
+their going to love the new design its much cleaner than the old one
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

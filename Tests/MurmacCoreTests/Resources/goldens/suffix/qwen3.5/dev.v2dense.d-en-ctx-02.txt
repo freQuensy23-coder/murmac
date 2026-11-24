@@ -1,0 +1,38 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Message»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+#design-system 18:50 Sounds good
+See you then
+Yes, it's at the post office until Friday Morning! How did you sleep?
+Happy birthday! Have a great one! Thank you so much! Did the package arrive?
+#design-system 14:22
+Mom
+No worries, we're late too Has anyone seen my umbrella? It's hanging by the door
+•Родительский чат 5Б
+●Павел Громов
+Don't forget the charger this time Can you send the address again? Stuck in traffic, running about fifteen late
+Direct messages Emma Wilson
+Mom called asking about the holidays I'll call her back tonight I left the keys with the neighbor
+# general
+do the hike on Sunday
+# announcements
+Figma, FigJam, Miro, Storybook, Chromatic Did you see the forecast for the weekend? Rain on Saturday, sunny on Sunday apparently Then let's
+# hiring
+work
+# design # standup
+milk on the way? Sure, I'll stop by the store after
+Haha
+James Carter
+Банк· now
+</context>
+<transcript>
+i updated the components in fig ma and pushed them to story book
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

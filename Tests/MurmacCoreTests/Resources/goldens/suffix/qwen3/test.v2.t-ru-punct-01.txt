@@ -1,0 +1,36 @@
+Style: Casual chat message. Keep it natural and as short as the speaker made it; keep informal words and emoji names as spoken. A single short sentence may end without a period.
+<context>
+App: WhatsApp — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+22 октября
+Chloe Taylor
+See you soon
+пн
+Роман Зайцев
+Фото с выходных
+WH
+ЧТ
+Weekend hikes
+Посмотри, когда будет в.…
+AC
+Анна Смирнова
+BT
+Уже еду
+Дом 12, подъезд 3
+Можно я позвоню вечер...
+Ахаха
+Наталья Павловна
+в сети
+Чаты
+Аня
+</context>
+<transcript>
+привет как дела я тут подумал может сходим в кино в выходные если ты не занята
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

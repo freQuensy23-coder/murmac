@@ -1,0 +1,18 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Тимур Гарипов, cert-manager, external-dns
+Обновляю ingress-nginx до 1.14
+Тимофей Гаврилов 18:50
+Сегодня
+45 участников
+# k8s
+</context>
+<transcript>
+тимофей гаврилов уже обновил ингресс энджин икс и серт менеджер
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

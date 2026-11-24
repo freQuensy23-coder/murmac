@@ -1,0 +1,16 @@
+Style: Formal, complete sentences, no contractions.
+<context>
+App: Telegram — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Да, сейчас
+Привет! Скинь, пожалуйста, ссылку на отчёт по продажам
+был(а) недавно
+Лёша Козлов
+</context>
+<transcript>
+ну давай завтра созвонимся
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

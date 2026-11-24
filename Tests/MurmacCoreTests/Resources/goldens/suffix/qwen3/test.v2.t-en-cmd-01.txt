@@ -1,0 +1,41 @@
+Style: Email. Use complete sentences and paragraphs; put a greeting and a sign-off on their own lines only if they were dictated.
+<context>
+App: Gmail — email body
+Field hint: «Compose email»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Primary
+Ben Harris
+вН
+Новости недели
+Hey! As we discussed...
+Travel Desk
+Schedule change Hi there, just a reminder that..
+Lucas White
+LW
+Meeting invitation Thanks for your purchase. Your order...
+Mon
+City Library
+Appointment reminder
+Dear customer, we would like to...
+Wed
+Noah Davis
+ND
+Invoice for November
+Спасибо за покупку. Ваш заказ...
+IMG_2041.jpg
+School Office
+so
+Квитанция об оплате
+Привет! Как и договаривались...
+Mail
+Meet
+</context>
+<transcript>
+dear team comma new paragraph the release is delayed until next week period please plan accordingly period new paragraph thanks comma new line maria
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

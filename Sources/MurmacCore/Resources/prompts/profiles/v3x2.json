@@ -1,0 +1,2 @@
+{"name": "v3x2", "system": "default.v3", "shots": "shots/v2ctx.v3.jsonl", "ctx2": {},
+ "_comment": "Eval-only: default.v3 rules and shots with the shots' contexts migrated to ctx v2 (measures v1 -> v2 context alone)."}

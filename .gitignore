@@ -1,0 +1,11 @@
+.DS_Store
+.build/
+.swiftpm/
+.cache/
+*.xcodeproj
+*.xcworkspace
+build/
+dist/
+Murmac.app/
+*.dmg
+*.log

@@ -1,0 +1,14 @@
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+</context>
+<transcript>
+что лучше использовать для очередей rabbitmq или kafka
+</transcript><|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

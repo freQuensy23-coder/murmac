@@ -1,0 +1,47 @@
+Style: Email. Use complete sentences and paragraphs; put a greeting and a sign-off on their own lines only if they were dictated.
+<context>
+App: Gmail — email body
+Field hint: «Compose email»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+38 Mail
+Meet
+the post office until Friday
+Fri
+Mom
+Did the package a
+Compose
+Invoice for November Привет! Как и дого..
+Happy birthday! Have a great one! Thank you so much!
+Бабушка
+Wed
+It's hanging by the door
+Booking confirmation Здравствуйте! Нап..
+Has anyone seen my umbrella?
+SM
+Thu
+Sophie Martin
+Stuck in traffic, running about fifteen late No worries, we're late too
+Dear customer, we ...
+Schedule change
+Bank
+Don't forget the charger this time Can you send the address again?
+Meeting invitation Hey! As we discuss...
+Noah Davis
+I'll call her back tonight I left the keys with the neighbor
+holidays
+Assignment 3 Reminder: assignm... IMG_2041.jpg
+Mom called asking about the
+Then let's do the hike on Sunday
+PD
+Prof. David Lee
+Primary
+Inbox
+MC
+Search in mail
+</context>
+<transcript>
+hi professor lee i wanted to ask if i could submit the assignment on monday instead best regards nina
+</transcript><|im_end|>
+<|im_start|>assistant
+<think></think>

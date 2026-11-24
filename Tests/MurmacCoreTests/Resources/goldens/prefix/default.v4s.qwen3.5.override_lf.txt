@@ -1,0 +1,172 @@
+<|im_start|>system
+Fix punctuation only.<|im_end|>
+<|im_start|>user
+Style: Casual chat message. Keep it natural and as short as the speaker made it; keep informal words and emoji names as spoken. A single short sentence may end without a period.
+<context>
+App: Telegram — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+15 июня
+в сети
+Бег по субботам
+</context>
+<transcript>
+так значит созвон переносим на четверг нет на пятницу в одиннадцать тридцать
+</transcript><|im_end|>
+<|im_start|>assistant
+Созвон переносим на пятницу в 11:30.<|im_end|>
+<|im_start|>user
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Message»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Today
+Артём
+Football
+Ben Harris
+Direct messages Mom
+# hiring
+# announcements
+# office
+#support
+# random
+7 members
+Отдел
+# general
+</context>
+<transcript>
+Um, so I think we should, uh, we should push the release to Monday, I mean Tuesday.
+</transcript><|im_end|>
+<|im_start|>assistant
+I think we should push the release to Tuesday.<|im_end|>
+<|im_start|>user
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Message»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Today
+55 members
+# general
+</context>
+<transcript>
+the demo is ready но я ещё не проверил логин на айфоне
+</transcript><|im_end|>
+<|im_start|>assistant
+The demo is ready, но я ещё не проверил логин на iPhone.<|im_end|>
+<|im_start|>user
+Style: Casual chat message. Keep it natural and as short as the speaker made it; keep informal words and emoji names as spoken. A single short sentence may end without a period.
+<context>
+App: Telegram — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+5 декабря
+печатает.
+Дом 12, подъезд 3
+</context>
+<transcript>
+напоминаю двоеточие сдать отчеты до пятницы точка новый абзац вопросы есть вопросительный знак
+</transcript><|im_end|>
+<|im_start|>assistant
+Напоминаю: сдать отчёты до пятницы.
+
+Вопросы есть?<|im_end|>
+<|im_start|>user
+Style: Casual chat message. Keep it natural and as short as the speaker made it; keep informal words and emoji names as spoken. A single short sentence may end without a period.
+<context>
+App: Telegram — message field
+Field hint: «Сообщение»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Скинь адрес
+Сергей Кузнецов
+ПТ
+Сегодня
+Не забудь зонт
+Дача
+c6
+Посмотри, когда буде...
+пн
+Артём
+Павел Громов
+Я уже выхожу
+BH
+Вера Николаевна
+Завтра в семь, не за..
+r0.00
+Голосовое сообщение
+Chloe Taylor
+Messages ·сейчас
+</context>
+<transcript>
+пиши на анна точка смирнова собака джимейл точка ком или звони восемь девятьсот шестнадцать сто двадцать три сорок пять шестьдесят семь
+</transcript><|im_end|>
+<|im_start|>assistant
+Пиши на anna.smirnova@gmail.com или звони 8 916 123-45-67.<|im_end|>
+<|im_start|>user
+Style: Casual chat message. Keep it natural and as short as the speaker made it; keep informal words and emoji names as spoken. A single short sentence may end without a period.
+<context>
+App: WhatsApp — message field
+Field hint: «Message»
+Dictation language: English
+Text already in the field before the cursor: «Sorry for the delay, I was»
+Screen text (OCR, nearest to the field first):
+Oct 12
+Ben Harris last seen recently
+</context>
+<transcript>
+stuck in traffic but i'm on my way now
+</transcript><|im_end|>
+<|im_start|>assistant
+stuck in traffic, but I'm on my way now.<|im_end|>
+<|im_start|>user
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Message»
+Dictation language: Russian
+Screen text (OCR, nearest to the field first):
+Any update on the release? QA is waiting for the build
+Ryan Cole 09:14
+Today
+88 members
+Ryan Cole
+</context>
+<transcript>
+скину апдейт по релизу после обеда
+</transcript><|im_end|>
+<|im_start|>assistant
+Скину апдейт по релизу после обеда.<|im_end|>
+<|im_start|>user
+Style: Work chat message. Clear and concise; keep technical terms, @mentions, file names and code identifiers exactly as on screen.
+<context>
+App: Slack — message field
+Field hint: «Message»
+Dictation language: English
+Screen text (OCR, nearest to the field first):
+Oct 26
+Noah Davis
+Mom
+Flatmates
+Кино
+Direct messages
+# support
+# random
+# standup
+# announcements
+# hiring
+21 members
+Acme
+# general
+</context>
+<transcript>
+uh hmm
+</transcript><|im_end|>
+<|im_start|>assistant
+<|im_end|>
+<|im_start|>user
